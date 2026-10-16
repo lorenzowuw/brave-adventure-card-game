@@ -1,0 +1,135 @@
+[
+  {
+    "id": "bless_meditation",
+    "name": "持久冥想",
+    "description": "本局最大能量+1",
+    "effect": {
+      "maxEnergyGain": 1
+    },
+    "duration": "run",
+    "name_en": "Lasting Meditation",
+    "description_en": "+1 max energy for this run."
+  },
+  {
+    "id": "bless_life_prayer",
+    "name": "生命祝祷",
+    "description": "最大生命+6，并回复6点生命",
+    "effect": {
+      "maxHpGain": 6,
+      "heal": 6
+    },
+    "duration": "run",
+    "name_en": "Life Prayer",
+    "description_en": "+6 max HP and restore 6 HP."
+  },
+  {
+    "id": "bless_foresight",
+    "name": "战斗预感",
+    "description": "每场战斗开始时额外抽1张牌",
+    "effect": {
+      "drawCards": 1
+    },
+    "duration": "run",
+    "name_en": "Battle Foresight",
+    "description_en": "Draw 1 extra card at the start of each battle."
+  },
+  {
+    "id": "bless_gold",
+    "name": "金币祝福",
+    "description": "每场战斗胜利后额外获得5金币",
+    "effect": {
+      "goldGain": 5
+    },
+    "duration": "run",
+    "name_en": "Gold Blessing",
+    "description_en": "Gain 5 extra gold after each combat victory."
+  },
+  {
+    "id": "bless_resilience",
+    "name": "韧性成长",
+    "description": "每场战斗胜利后回复5点生命",
+    "effect": {
+      "postCombatHeal": 5
+    },
+    "duration": "run",
+    "name_en": "Growing Resilience",
+    "description_en": "Restore 5 HP after each combat victory."
+  },
+  {
+    "id": "bless_merchant",
+    "name": "商旅眷顾",
+    "description": "本局商店所有价格降低10%",
+    "effect": {
+      "shopPriceDiscount": 10
+    },
+    "duration": "run",
+    "name_en": "Merchant's Favor",
+    "description_en": "Shop prices are 10% lower this run."
+  },
+  {
+    "id": "bless_extra_choice",
+    "name": "额外选择",
+    "description": "战斗奖励卡牌选项+1",
+    "effect": {
+      "rewardChoiceBonus": 1
+    },
+    "duration": "run",
+    "name_en": "Extra Choice",
+    "description_en": "+1 card reward choice after combat."
+  },
+  {
+    "id": "bless_traveler_pack",
+    "name": "旅人背包",
+    "description": "立即获得15金币",
+    "effect": {
+      "immediateGold": 15
+    },
+    "duration": "run",
+    "name_en": "Traveler's Pack",
+    "description_en": "Gain 15 gold immediately."
+  },
+  {
+    "id": "bless_safe_rest",
+    "name": "安稳休息",
+    "description": "安全营地基础回复量+20%最大生命",
+    "effect": {
+      "restHealPercentBonus": 20
+    },
+    "duration": "run",
+    "name_en": "Peaceful Rest",
+    "description_en": "Safe Camp rest restores 20% max HP more."
+  },
+  {
+    "id": "bless_free_card",
+    "name": "赊账凭证",
+    "description": "下次购买卡牌免费",
+    "effect": {
+      "nextShopCardFree": true
+    },
+    "duration": "run",
+    "name_en": "Credit Voucher",
+    "description_en": "Your next card purchase is free."
+  },
+  {
+    "id": "bless_warm_soup",
+    "name": "温热药汤",
+    "description": "立即回复25%最大生命",
+    "effect": {
+      "healPercent": 25
+    },
+    "duration": "run",
+    "name_en": "Warm Herbal Soup",
+    "description_en": "Restore 25% of max HP immediately."
+  },
+  {
+    "id": "bless_safe_guidance",
+    "name": "安全指引",
+    "description": "当前风险-10",
+    "effect": {
+      "riskChange": -10
+    },
+    "duration": "run",
+    "name_en": "Safe Guidance",
+    "description_en": "Reduce current risk by 10."
+  }
+]

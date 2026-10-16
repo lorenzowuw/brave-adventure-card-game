@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="远古种子·神话">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="100" r="72" fill="#2bc06a" opacity="0.13"/>
+    <ellipse cx="128" cy="128" rx="34" ry="40" fill="#135630" stroke="#2bc06a" stroke-width="5"/>
+    <path d="M128 96 C128 70 110 56 90 54 C96 76 110 90 128 96 Z" fill="#135630" stroke="#2bc06a" stroke-width="4"/>
+    <path d="M128 96 C128 66 148 50 170 50 C162 74 148 90 128 96 Z" fill="#69da99" stroke="#2bc06a" stroke-width="4"/>
+    <path d="M128 96 L128 132" stroke="#69da99" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">远古种子·神话</text>
+</svg>

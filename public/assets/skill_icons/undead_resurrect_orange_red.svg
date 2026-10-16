@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="亡灵复苏·神话">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="96" r="74" fill="#318fce" opacity="0.13"/>
+    <path d="M88 150 C92 120 84 96 100 72 C112 54 144 54 156 72 C172 96 164 120 168 150" stroke="#318fce" stroke-width="5" fill="#16405d" opacity="0.9"/>
+    <circle cx="128" cy="76" r="16" fill="#16405d" stroke="#318fce" stroke-width="4"/>
+    <path d="M128 40 L128 24 M108 50 L98 38 M148 50 L158 38" stroke="#6db5e5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M114 96 C120 108 136 108 142 96" stroke="#6db5e5" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">亡灵复苏·神话</text>
+</svg>

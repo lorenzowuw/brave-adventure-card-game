@@ -1,0 +1,320 @@
+[
+  {
+    "id": "ironwall",
+    "name": "铁壁守卫",
+    "title": "坚不可摧之盾",
+    "role": [
+      "tank"
+    ],
+    "baseHp": 50,
+    "baseEnergy": 4,
+    "description": "身披重甲、手持大盾的防御型战士。擅长承受伤害并保护队友。",
+    "passiveName": "坚毅壁垒",
+    "passiveDescription": "回合结束时保留25%护甲（向上取整）",
+    "unlockCondition": "starter",
+    "mainColor": "#4A90D9",
+    "name_en": "Ironwall",
+    "title_en": "The Unbreakable Shield",
+    "description_en": "A heavily armored defensive warrior. Excels at taking damage and protecting allies.",
+    "passiveName_en": "Iron Bulwark",
+    "passiveDescription_en": "Retain 25% of Armor at end of turn (rounded up)."
+  },
+  {
+    "id": "shadowblade",
+    "name": "影刃刺客",
+    "title": "暗影中的利刃",
+    "role": [
+      "damage"
+    ],
+    "baseHp": 28,
+    "baseEnergy": 3,
+    "description": "身法敏捷的刺客，擅长用闪避规避攻击，并在暗影中发动致命一击。",
+    "passiveName": "暗影专注",
+    "passiveDescription": "每回合首张攻击牌伤害+50%",
+    "unlockCondition": "starter",
+    "mainColor": "#8E44AD",
+    "name_en": "Shadowblade",
+    "title_en": "Blade in the Shadows",
+    "description_en": "A swift assassin who dodges enemy attacks and strikes from the shadows with deadly precision.",
+    "passiveName_en": "Shadow Focus",
+    "passiveDescription_en": "First Attack card each turn deals +50% damage."
+  },
+  {
+    "id": "lifesage",
+    "name": "生命贤者",
+    "title": "自然之息的守护者",
+    "role": [
+      "healer",
+      "support"
+    ],
+    "baseHp": 35,
+    "baseEnergy": 4,
+    "description": "以生命为代价释放毁灭性力量的贤者，高风险高回报的输出型治疗者。",
+    "passiveName": "自然回春",
+    "passiveDescription": "每回合结束时回复3点生命值",
+    "unlockCondition": "starter",
+    "mainColor": "#2ECC71",
+    "name_en": "Lifesage",
+    "title_en": "Sage of Life",
+    "description_en": "A sage who wields the power of life. Specializes in healing and sustained combat.",
+    "passiveName_en": "Natural Revival",
+    "passiveDescription_en": "At end of each turn, restore 3 HP."
+  },
+  {
+    "id": "taichimonk",
+    "name": "太极武僧",
+    "title": "以柔克刚的大师",
+    "role": [
+      "damage",
+      "support"
+    ],
+    "baseHp": 32,
+    "baseEnergy": 4,
+    "description": "精通太极之道的武僧，擅长借力打力、以柔克刚。",
+    "passiveName": "守拙",
+    "passiveDescription": "每回合开始获得5点护甲。",
+    "unlockCondition": "starter",
+    "mainColor": "#E67E22",
+    "name_en": "Taichimonk",
+    "title_en": "Tai Chi Warrior",
+    "description_en": "A monk who uses the power of Tai Chi to counter enemies with minimal effort.",
+    "passiveName_en": "Quiet Guard",
+    "passiveDescription_en": "Gain 5 armor at the start of each turn."
+  },
+  {
+    "id": "holylight",
+    "name": "圣光战士",
+    "title": "绝境中的曙光",
+    "role": [
+      "damage",
+      "tank"
+    ],
+    "baseHp": 32,
+    "baseEnergy": 4,
+    "description": "被圣光眷顾的战士，生命垂危时能爆发出惊人的力量。",
+    "passiveName": "圣光恩赐",
+    "passiveDescription": "生命低于40%时攻击伤害翻倍",
+    "unlockCondition": "boss1",
+    "mainColor": "#E74C3C",
+    "name_en": "Holy Light",
+    "title_en": "Holy Light Warrior",
+    "description_en": "A warrior blessed by holy light. Becomes stronger when critically injured.",
+    "passiveName_en": "Radiance of the Dawn",
+    "passiveDescription_en": "When HP is below 40%, Attack cards deal +100% damage."
+  },
+  {
+    "id": "wealthmerchant",
+    "name": "游侠商人",
+    "title": "万物皆有价",
+    "role": [
+      "economy",
+      "support"
+    ],
+    "baseHp": 26,
+    "baseEnergy": 5,
+    "description": "拥有无尽财富的商人，能将金币转化为各种力量。",
+    "passiveName": "点金之手",
+    "passiveDescription": "战斗结束获得额外75%金币",
+    "unlockCondition": "boss1",
+    "mainColor": "#F1C40F",
+    "name_en": "Ranger Merchant",
+    "title_en": "Master of Coin",
+    "description_en": "A merchant who wields gold as a weapon. The more gold you have, the stronger you become.",
+    "passiveName_en": "Gold Talent",
+    "passiveDescription_en": "Gain 75% extra gold from enemy rewards.",
+    "activeSkill": {
+      "name": "挥金如雨",
+      "name_en": "Gold Storm",
+      "description": "消耗1点能量与最多40金币，对选定敌人造成消耗金币2倍的伤害",
+      "description_en": "Spend 1 energy and up to 40 gold to deal 2x spent gold as damage to the selected enemy."
+    }
+  },
+  {
+    "id": "undeadpriest",
+    "name": "亡灵祭司",
+    "title": "死亡的领路人",
+    "role": [
+      "damage",
+      "support"
+    ],
+    "baseHp": 30,
+    "baseEnergy": 3,
+    "description": "掌控死亡之力的祭司，击杀敌人后能获得额外收益。",
+    "passiveName": "血祭仪式",
+    "passiveDescription": "每次献祭后获得1层强化。",
+    "unlockCondition": "boss2",
+    "mainColor": "#3498DB",
+    "name_en": "Undead Priest",
+    "title_en": "Undead Priest",
+    "description_en": "An undead priest who drains life from enemies. Each kill makes you more powerful.",
+    "passiveName_en": "Blood Rite",
+    "passiveDescription_en": "Gain 1 Empower after each sacrifice."
+  },
+  {
+    "id": "armorbreaker",
+    "name": "狂战士",
+    "title": "嗜血的怒火",
+    "role": [
+      "damage"
+    ],
+    "baseHp": 34,
+    "baseEnergy": 4,
+    "description": "在战斗中越战越狂的战士，怒火积累到极限便会爆发狂暴。",
+    "passiveName": "血怒",
+    "passiveDescription": "受到伤害+10怒气，每打出一张攻击牌+15怒气；怒气满100自动进入狂暴状态（持续3回合）。",
+    "unlockCondition": "boss3",
+    "mainColor": "#7F8C8D",
+    "name_en": "Berserker",
+    "title_en": "Bloodthirsty Fury",
+    "description_en": "A warrior who grows fiercer in battle. When rage peaks, he erupts into Berserk.",
+    "passiveName_en": "Blood Fury",
+    "passiveDescription_en": "+10 Rage when hit, +15 Rage per attack card; at 100 Rage, auto-enter Berserk (lasts 3 turns)."
+  },
+  {
+    "id": "elementmage",
+    "name": "元素法师",
+    "title": "火冰雷的刻印者",
+    "role": [
+      "damage",
+      "control"
+    ],
+    "baseHp": 24,
+    "baseEnergy": 4,
+    "description": "专精火、冰、雷三系状态法术的法师，依靠灼烧、虚弱和麻痹压制敌人。",
+    "passiveName": "元素刻印",
+    "passiveDescription": "火牌额外施加1层灼烧（持续2回合）；冰牌额外施加1层虚弱（持续2回合）；雷牌额外施加1层麻痹（持续1回合）。",
+    "unlockCondition": "boss3",
+    "mainColor": "#8E44AD",
+    "name_en": "Element Mage",
+    "title_en": "Elemental Imprinter",
+    "description_en": "A mage specializing in fire, ice, and lightning status magic, suppressing enemies with Burn, Weak, and Paralyze.",
+    "passiveName_en": "Elemental Imprint",
+    "passiveDescription_en": "Fire cards apply +1 Burn (lasts 2 turns); Ice cards apply +1 Weak (lasts 2 turns); Lightning cards apply +1 Paralyze (lasts 1 turn)."
+  },
+  {
+    "id": "omnisage",
+    "name": "全能贤者",
+    "title": "全能的智者",
+    "role": [
+      "support",
+      "healer",
+      "damage"
+    ],
+    "baseHp": 30,
+    "baseEnergy": 4,
+    "description": "掌握回响之力的全能贤者，卡牌可触发回响获得双倍效果。",
+    "passiveName": "博学多才",
+    "passiveDescription": "每回合开始获得1层回响。",
+    "unlockCondition": "boss4",
+    "mainColor": "#F39C12",
+    "name_en": "Omnisage",
+    "title_en": "Omniscient Sage",
+    "description_en": "A sage who masters the power of echoes. Playing a card consumes 1 Echo to double its effects.",
+    "passiveName_en": "Erudition",
+    "passiveDescription_en": "Gain 1 Echo at the start of each turn."
+  },
+  {
+    "id": "combatmaster",
+    "name": "格斗大师",
+    "title": "连击的艺术",
+    "role": [
+      "damage"
+    ],
+    "baseHp": 28,
+    "baseEnergy": 5,
+    "description": "精通近身格斗的大师，连击次数越多伤害越高。",
+    "passiveName": "连击递增",
+    "passiveDescription": "每次攻击命中获得1层连击。",
+    "unlockCondition": "boss4",
+    "mainColor": "#E67E22",
+    "name_en": "Combat Master",
+    "title_en": "Combat Master",
+    "description_en": "A master of close combat. Combos deal more damage the more cards you play.",
+    "passiveName_en": "Combo Escalation",
+    "passiveDescription_en": "Each attack hit grants 1 Combo."
+  },
+  {
+    "id": "frostpriest",
+    "name": "冰霜祭司",
+    "title": "凛冬的祝福",
+    "role": [
+      "healer",
+      "control"
+    ],
+    "baseHp": 32,
+    "baseEnergy": 4,
+    "description": "掌握冰霜之力的祭司，既能治疗队友又能冰冻敌人。",
+    "passiveName": "寒冰共鸣",
+    "passiveDescription": "敌人被冻结时，抽1张牌",
+    "unlockCondition": "boss5",
+    "mainColor": "#3498DB",
+    "name_en": "Frost Priest",
+    "title_en": "Frost Priest",
+    "description_en": "A priest who commands ice magic and draws strength from freezing enemies.",
+    "passiveName_en": "Frost Resonance",
+    "passiveDescription_en": "Draw 1 card whenever an enemy is Frozen."
+  },
+  {
+    "id": "thornguardian",
+    "name": "荆棘守卫",
+    "title": "越战越强的堡垒",
+    "role": [
+      "tank",
+      "damage"
+    ],
+    "baseHp": 46,
+    "baseEnergy": 5,
+    "description": "身披荆棘之甲的守卫，受到的伤害会转化为反击力量。",
+    "passiveName": "荆棘反刺",
+    "passiveDescription": "受到攻击时（含护甲吸收部分）反弹30%伤害给攻击者。",
+    "unlockCondition": "boss5",
+    "mainColor": "#27AE60",
+    "name_en": "Thorn Guardian",
+    "title_en": "Thorn Guardian",
+    "description_en": "A guardian covered in thorns. Reflects damage back at attackers.",
+    "passiveName_en": "Thorn Retribution",
+    "passiveDescription_en": "Reflect 30% of incoming attack damage (including damage absorbed by armor) back to the attacker."
+  },
+  {
+    "id": "devourer",
+    "name": "吞噬者",
+    "title": "无尽饥饿的深渊",
+    "role": [
+      "damage"
+    ],
+    "baseHp": 30,
+    "baseEnergy": 4,
+    "description": "以吞噬敌人为生的深渊造物，残血敌人无法逃脱它的血盆大口。",
+    "passiveName": "无尽吞噬",
+    "passiveDescription": "攻击后敌人生命低于15%时直接吞噬斩杀，回复其最大生命15%，永久获得2点生命上限。",
+    "unlockCondition": "boss5",
+    "mainColor": "#9B2D6F",
+    "name_en": "Devourer",
+    "title_en": "The Endless Hunger",
+    "description_en": "An abyssal being that feeds on enemies. Low-HP foes cannot escape its maw.",
+    "passiveName_en": "Endless Devour",
+    "passiveDescription_en": "After attacking, enemies below 15% HP are devoured instantly. Heal 15% of their max HP and permanently gain 2 max HP."
+  },
+  {
+    "id": "developer",
+    "name": "创造者",
+    "title": "超越维度的存在",
+    "role": [
+      "damage",
+      "support",
+      "tank"
+    ],
+    "baseHp": 666,
+    "baseEnergy": 998,
+    "description": "开发者模式下的测试角色，掌握创世之力。",
+    "passiveName": "创世之力",
+    "passiveDescription": "所有攻击获得+999伤害",
+    "unlockCondition": "devmode",
+    "mainColor": "#FFD700",
+    "name_en": "Developer",
+    "title_en": "Developer",
+    "description_en": "Developer testing character. Extremely overpowered.",
+    "passiveName_en": "Absolute Power",
+    "passiveDescription_en": "All attacks deal 999 extra damage."
+  }
+]

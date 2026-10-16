@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="秩序卡壳">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#201f28"/>
+      <stop offset="62%" stop-color="#070708"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <g fill="#c0c0e0" opacity="0.9">
+      <rect x="84" y="64" width="24" height="24"/><rect x="120" y="52" width="20" height="20"/>
+      <rect x="148" y="84" width="26" height="26"/><rect x="96" y="104" width="22" height="22"/>
+      <rect x="132" y="116" width="20" height="20"/></g>
+    <path d="M76 96 H180" stroke="#fff" stroke-width="3" opacity="0.4"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">秩序卡壳</text>
+</svg>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "forest",
+    "name": "迷雾森林",
+    "bossId": "boss_tree_king",
+    "bossNumber": 1,
+    "minEnemyTier": "normal",
+    "maxEnemyTier": "elite"
+  },
+  {
+    "id": "ruins",
+    "name": "古城遗迹",
+    "bossId": "boss_ruins_watcher",
+    "bossNumber": 1,
+    "minEnemyTier": "normal",
+    "maxEnemyTier": "elite"
+  },
+  {
+    "id": "flame",
+    "name": "烈焰之地",
+    "bossId": "boss_flame_lord",
+    "bossNumber": 2,
+    "minEnemyTier": "normal",
+    "maxEnemyTier": "elite"
+  },
+  {
+    "id": "frost",
+    "name": "冰封神殿",
+    "bossId": "boss_frost_dragon",
+    "bossNumber": 2,
+    "minEnemyTier": "normal",
+    "maxEnemyTier": "elite"
+  },
+  {
+    "id": "chaos",
+    "name": "混沌深渊",
+    "bossId": "boss_chaos_lord",
+    "bossNumber": 3,
+    "minEnemyTier": "elite",
+    "maxEnemyTier": "boss"
+  }
+]

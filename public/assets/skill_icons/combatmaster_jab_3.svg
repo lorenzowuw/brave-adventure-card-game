@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="直拳">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="96" r="76" fill="#d9a15f" opacity="0.13"/>
+    <path d="M66 100 H154" stroke="#ffd29a" stroke-width="8" stroke-linecap="round" opacity="0.75"/>
+    <path d="M146 78 C168 78 186 92 186 110 C186 132 166 144 142 140 L104 134 C88 132 78 120 82 106 C86 90 102 84 118 88 Z" fill="#5b3311" stroke="#d9a15f" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M122 90 L118 130 M140 80 L134 138 M158 84 L148 140" stroke="#ffd29a" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M58 78 L82 88 M58 124 L82 116" stroke="#ffd29a" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">直拳</text>
+</svg>

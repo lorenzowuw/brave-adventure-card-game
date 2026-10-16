@@ -1,0 +1,93 @@
+{
+  "baseHandSize": 5,
+  "baseDrawPerTurn": 2,
+  "maxHandSize": 10,
+  "baseEnergyPerTurn": 6,
+  "maxEnergy": 12,
+  "startingGold": 10,
+  "shopPriceMultiplier": 1,
+  "levelExpCurve": [
+    0,
+    15,
+    35,
+    60,
+    90,
+    130,
+    180,
+    240,
+    320,
+    420
+  ],
+  "levelBonuses": [
+    {
+      "hpBonus": 0,
+      "energyBonus": 0,
+      "unlocksSlot": false,
+      "skillUpgrade": false,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 12,
+      "energyBonus": 0,
+      "unlocksSlot": true,
+      "skillUpgrade": false,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 25,
+      "energyBonus": 1,
+      "unlocksSlot": false,
+      "skillUpgrade": true,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 40,
+      "energyBonus": 1,
+      "unlocksSlot": true,
+      "skillUpgrade": false,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 55,
+      "energyBonus": 2,
+      "unlocksSlot": false,
+      "skillUpgrade": true,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 75,
+      "energyBonus": 2,
+      "unlocksSlot": false,
+      "skillUpgrade": false,
+      "passiveSlot": true
+    },
+    {
+      "hpBonus": 95,
+      "energyBonus": 3,
+      "unlocksSlot": false,
+      "skillUpgrade": true,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 115,
+      "energyBonus": 3,
+      "unlocksSlot": true,
+      "skillUpgrade": false,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 140,
+      "energyBonus": 4,
+      "unlocksSlot": false,
+      "skillUpgrade": true,
+      "passiveSlot": false
+    },
+    {
+      "hpBonus": 170,
+      "energyBonus": 4,
+      "unlocksSlot": false,
+      "skillUpgrade": false,
+      "passiveSlot": true
+    }
+  ]
+}

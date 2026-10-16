@@ -1,0 +1,14 @@
+[
+  {
+    "id": "triple_attack",
+    "name": "三重打击",
+    "description": "连续打出3张攻击牌后触发共鸣。",
+    "requiredTypes": [
+      "attack",
+      "attack",
+      "attack"
+    ],
+    "name_en": "Triple Strike",
+    "description_en": "Triggered by 3 consecutive Attack cards. The third Attack deals 50% bonus damage."
+  }
+]

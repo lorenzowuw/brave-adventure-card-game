@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rusty_blade",
+    "name": "旧短刃",
+    "slot": "weapon",
+    "bonusType": "attack",
+    "bonus": 1,
+    "durability": 5,
+    "description": "一把可靠但老旧的短刃。"
+  },
+  {
+    "id": "leather_vest",
+    "name": "旧皮背心",
+    "slot": "armor",
+    "bonusType": "defense",
+    "bonus": 1,
+    "durability": 4,
+    "description": "能挡下一点擦伤。"
+  },
+  {
+    "id": "tool_belt",
+    "name": "工具腰带",
+    "slot": "tool",
+    "bonusType": "gather",
+    "bonus": 1,
+    "durability": 4,
+    "description": "挂着几件还能用的小工具。"
+  }
+]

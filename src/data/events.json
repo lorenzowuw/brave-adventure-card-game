@@ -1,0 +1,1357 @@
+[
+  {
+    "id": "forest_traveler",
+    "title": "受困的旅人",
+    "description": "在森林深处，你发现一个被树藤缠绕的受伤旅人。他看到你后投来求助的目光。",
+    "choices": [
+      {
+        "id": "help",
+        "label": "伸出援手",
+        "description": "消耗体力帮助旅人脱困，获得一张通用绿色卡牌",
+        "effects": {
+          "hpChange": -4,
+          "cardRewardPool": "generic",
+          "cardRewardRarity": "green"
+        },
+        "outcomeText": "旅人感激你的帮助，将家传的格挡技巧教给了你。",
+        "label_en": "Help",
+        "description_en": "Spend HP to free the traveler, gain a generic Uncommon card.",
+        "outcomeText_en": "The traveler thanks you and teaches you a practical guarding trick."
+      },
+      {
+        "id": "demand_payment",
+        "label": "索要报酬",
+        "description": "先谈好价钱再帮忙",
+        "effects": {
+          "goldChange": 8
+        },
+        "outcomeText": "旅人虽然有些不情愿，但还是付了金币作为酬劳。",
+        "label_en": "Demand Payment",
+        "description_en": "gain 8 gold",
+        "outcomeText_en": "You choose Demand Payment and continue."
+      },
+      {
+        "id": "ignore",
+        "label": "绕道走",
+        "description": "多一事不如少一事",
+        "effects": {},
+        "outcomeText": "你绕过旅人继续前行。身后传来一声叹息。",
+        "label_en": "Ignore",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Ignore and continue."
+      }
+    ],
+    "areaId": "forest",
+    "title_en": "Stranded Traveler",
+    "description_en": "A wounded traveler lies by the roadside, seeking help.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 10
+  },
+  {
+    "id": "forest_wolf_pack",
+    "title": "狼群包围",
+    "description": "夜色压低了树影，几双泛绿的眼睛从灌木后亮起，狼群正在收紧包围。",
+    "choices": [
+      {
+        "id": "break_out",
+        "label": "强行突围",
+        "description": "硬闯狼群，夺下它们守着的猎物",
+        "effects": {
+          "hpChange": -8,
+          "goldChange": 28
+        },
+        "outcomeText": "你冲破狼群，身上添了几道伤口，也抢到了它们藏起的丰厚战利品。",
+        "label_en": "Break Out",
+        "description_en": "gain 28 gold, lose 8 HP",
+        "outcomeText_en": "You choose Break Out and continue."
+      },
+      {
+        "id": "watch_alpha",
+        "label": "观察头狼",
+        "description": "冒险观察狼群节奏，受轻伤并降低风险",
+        "effects": {
+          "hpChange": -4,
+          "riskChange": -10
+        },
+        "outcomeText": "你被狼爪擦伤，但也看清了狼群的扑击节奏，前方的危险气息稍稍散去。",
+        "label_en": "Watch Alpha",
+        "description_en": "Risk watching the pack rhythm, lose a little HP and reduce risk.",
+        "outcomeText_en": "The wolves graze you, but you learn their rhythm and the danger ahead eases."
+      },
+      {
+        "id": "wait",
+        "label": "静待时机",
+        "description": "不冒险，等狼群散去",
+        "effects": {},
+        "outcomeText": "你屏住呼吸，直到狼群追逐其他猎物离开。",
+        "label_en": "Wait",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Wait and continue."
+      }
+    ],
+    "areaId": "forest",
+    "title_en": "Wolf Pack Ambush",
+    "description_en": "Howling echoes through the trees as a pack of wolves encircles you.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 9
+  },
+  {
+    "id": "forest_ancient_tree",
+    "title": "古树低语",
+    "description": "一棵巨大的古树在风中低语，树心里流动着温暖的金色光。",
+    "choices": [
+      {
+        "id": "touch_heart",
+        "label": "触摸树心",
+        "description": "接受古树治愈",
+        "effects": {
+          "hpChange": 18
+        },
+        "outcomeText": "温暖的树液流过掌心，你的伤口缓缓愈合。",
+        "label_en": "Touch Heart",
+        "description_en": "restore 18 HP",
+        "outcomeText_en": "You choose Touch Heart and continue."
+      },
+      {
+        "id": "listen",
+        "label": "聆听低语",
+        "description": "耗费体力聆听低语，手牌上限 +1",
+        "effects": {
+          "hpChange": -4,
+          "handLimitChange": 1
+        },
+        "outcomeText": "古树的低语教会你如何整理思绪，你能掌控更多战术选择。",
+        "label_en": "Listen",
+        "description_en": "lose 4 HP, increase hand limit by 1",
+        "outcomeText_en": "You choose Listen and continue."
+      },
+      {
+        "id": "take_resin",
+        "label": "剥取树脂",
+        "description": "获得金币，但会受伤并提高风险",
+        "effects": {
+          "hpChange": -5,
+          "goldChange": 16,
+          "riskChange": 8
+        },
+        "outcomeText": "树脂价值不菲，但古树痛苦的震颤引来了不安的气息。",
+        "label_en": "Take Resin",
+        "description_en": "gain 16 gold, lose 5 HP, raise risk by 8",
+        "outcomeText_en": "You choose Take Resin and continue."
+      }
+    ],
+    "areaId": "forest",
+    "title_en": "Ancient Tree Whisper",
+    "description_en": "An ancient tree seems to emanate a mysterious energy.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 3
+  },
+  {
+    "id": "ruins_shrine",
+    "title": "古老祭坛",
+    "description": "在遗迹深处，你发现一座仍在运转的古老祭坛，散发着神秘的能量波动。",
+    "choices": [
+      {
+        "id": "offer_card",
+        "label": "献上技能卡",
+        "description": "失去5点生命，将一张初始技能卡献给祭坛，并获得本职业蓝色卡牌",
+        "effects": {
+          "hpChange": -5,
+          "removeRandomBasicCard": true,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "祭坛吸收了卡牌的能量，吐出了一张更强大的技能卡！",
+        "label_en": "Offer Card",
+        "description_en": "lose 5 HP, gain blue class card, remove a random basic card",
+        "outcomeText_en": "You choose Offer Card and continue."
+      },
+      {
+        "id": "offer_gold",
+        "label": "献上金币",
+        "description": "向祭坛献上30金币，手牌上限 +1",
+        "effects": {
+          "goldChange": -30,
+          "handLimitChange": 1
+        },
+        "outcomeText": "祭坛吞下金币，闪耀出柔和的光芒，你的思绪从此变得更加敏捷。",
+        "label_en": "Offer Gold",
+        "description_en": "Offer 30 gold, hand limit +1",
+        "outcomeText_en": "The altar swallows the gold and glows softly; your mind is forever quicker."
+      },
+      {
+        "id": "leave",
+        "label": "离开",
+        "description": "不打扰这座古老的祭坛",
+        "effects": {},
+        "outcomeText": "你默默离开，祭坛的光芒渐渐暗淡。",
+        "label_en": "Leave",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Leave and continue."
+      }
+    ],
+    "areaId": "ruins",
+    "title_en": "Ancient Shrine",
+    "description_en": "A mysterious shrine stands quietly in the ruins.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 8
+  },
+  {
+    "id": "ruins_trap_chest",
+    "title": "机关宝箱",
+    "description": "一只刻满符文的宝箱静静躺在石台上，锁孔附近布满细小机关。",
+    "choices": [
+      {
+        "id": "force_open",
+        "label": "强行开启",
+        "description": "硬吃机关，换取大量金币",
+        "effects": {
+          "hpChange": -7,
+          "goldChange": 28
+        },
+        "outcomeText": "机关刺入手臂，但宝箱里的金币足够弥补疼痛。",
+        "label_en": "Force Open",
+        "description_en": "gain 28 gold, lose 7 HP",
+        "outcomeText_en": "You choose Force Open and continue."
+      },
+      {
+        "id": "disarm",
+        "label": "仔细拆解",
+        "description": "安全拆开机关，获得少量金币",
+        "effects": {
+          "goldChange": 10
+        },
+        "outcomeText": "你耐心拆掉机关，只找到一小袋金币。",
+        "label_en": "Disarm",
+        "description_en": "gain 10 gold",
+        "outcomeText_en": "You choose Disarm and continue."
+      },
+      {
+        "id": "read_runes",
+        "label": "研究铭文",
+        "description": "获得一张本职业绿色卡牌",
+        "effects": {
+          "cardRewardPool": "class",
+          "cardRewardRarity": "green"
+        },
+        "outcomeText": "铭文记载着失传技法，你将其转化成了新的技能。",
+        "label_en": "Read Runes",
+        "description_en": "gain green class card",
+        "outcomeText_en": "You choose Read Runes and continue."
+      },
+      {
+        "id": "leave",
+        "label": "离开宝箱",
+        "description": "不碰可疑机关",
+        "effects": {},
+        "outcomeText": "你决定不让贪念战胜谨慎。",
+        "label_en": "Leave",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Leave and continue."
+      }
+    ],
+    "areaId": "ruins",
+    "title_en": "Trapped Chest",
+    "description_en": "An ornate chest sits in the center of the chamber, clearly booby-trapped.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 12
+  },
+  {
+    "id": "ruins_broken_library",
+    "title": "破碎书库",
+    "description": "坍塌的书架间散落着残缺卷轴，空气中浮动着陈旧墨香。",
+    "choices": [
+      {
+        "id": "read_scroll",
+        "label": "翻阅战斗卷轴",
+        "description": "获得一张本职业蓝色卡牌",
+        "effects": {
+          "cardRewardPool": "class",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "卷轴中的招式残缺不全，但你补完了关键部分。",
+        "label_en": "Read Scroll",
+        "description_en": "gain blue class card",
+        "outcomeText_en": "You choose Read Scroll and continue."
+      },
+      {
+        "id": "sort_pages",
+        "label": "整理残页",
+        "description": "熬夜钻研，失去生命，手牌上限 +1",
+        "effects": {
+          "hpChange": -12,
+          "handLimitChange": 1
+        },
+        "outcomeText": "你彻夜整理残卷，精神耗损，但战斗思路从此更加连贯。",
+        "label_en": "Sort the Pages",
+        "description_en": "Lose HP, hand limit +1",
+        "outcomeText_en": "You sort the scrolls all night, draining yourself, but your combat flow is forever sharper."
+      },
+      {
+        "id": "sell_books",
+        "label": "出售古籍",
+        "description": "获得金币，但风险上升",
+        "effects": {
+          "goldChange": 18,
+          "riskChange": 6
+        },
+        "outcomeText": "古籍卖了好价钱，也引来了其他探险者的注意。",
+        "label_en": "Sell Books",
+        "description_en": "gain 18 gold, raise risk by 6",
+        "outcomeText_en": "You choose Sell Books and continue."
+      }
+    ],
+    "areaId": "ruins",
+    "title_en": "Broken Library",
+    "description_en": "Ancient tomes lie scattered across the floor of this collapsed library.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 4
+  },
+  {
+    "id": "flame_trader",
+    "title": "神秘商人",
+    "description": "在熔岩流淌的峡谷中，一个兜帽商人向你展示他手中的发光物品。",
+    "choices": [
+      {
+        "id": "accept",
+        "label": "接受交易",
+        "description": "用15金币交换一张本职业稀有卡牌",
+        "effects": {
+          "goldChange": -15,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "商人将一张闪着微光的专属卡牌交到你手中，然后消失在热气中。",
+        "label_en": "Accept Trade",
+        "description_en": "Trade 15 gold for a rare class card.",
+        "outcomeText_en": "The merchant hands you a faintly glowing class card, then vanishes into the heat."
+      },
+      {
+        "id": "bargain",
+        "label": "讨价还价",
+        "description": "用10金币交换一张通用稀有卡牌，风险上升",
+        "effects": {
+          "goldChange": -10,
+          "cardRewardPool": "generic",
+          "cardRewardRarity": "blue",
+          "riskChange": 5
+        },
+        "outcomeText": "经过一番唇枪舌战，你用10金币买下了这张卡牌，但商人把你的行踪卖给了附近的怪物。",
+        "label_en": "Haggle",
+        "description_en": "Trade 10 gold for a rare generic card, but raise risk.",
+        "outcomeText_en": "After sharp bargaining, you buy the card for 10 gold, but the merchant sells your trail to nearby monsters."
+      },
+      {
+        "id": "refuse",
+        "label": "拒绝",
+        "description": "不信任这个神秘商人",
+        "effects": {},
+        "outcomeText": "商人耸耸肩，消失在熔岩的热气中。",
+        "label_en": "Refuse",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Refuse and continue."
+      }
+    ],
+    "areaId": "flame",
+    "title_en": "Mysterious Merchant",
+    "description_en": "A hooded figure tends a stall amidst the flames, offering exotic wares.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 10
+  },
+  {
+    "id": "flame_lava_forge",
+    "title": "熔岩锻炉",
+    "description": "一座被熔岩包围的锻炉仍在燃烧，铁砧上留着未冷却的火纹。",
+    "choices": [
+      {
+        "id": "blood_temper",
+        "label": "以血淬炼",
+        "description": "失去生命，获得本职业紫色卡牌",
+        "effects": {
+          "hpChange": -10,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "purple"
+        },
+        "outcomeText": "血滴落在锻炉中，火焰铸出一张危险而强大的技能。",
+        "label_en": "Blood Temper",
+        "description_en": "lose 10 HP, gain purple class card",
+        "outcomeText_en": "You choose Blood Temper and continue."
+      },
+      {
+        "id": "pay_fuel",
+        "label": "支付燃料费",
+        "description": "花费10金币，随机升级一张卡",
+        "effects": {
+          "goldChange": -10,
+          "upgradeRandomCard": true
+        },
+        "outcomeText": "金币化作燃料，锻炉替你重铸了一张技能卡。",
+        "label_en": "Pay the Fuel Fee",
+        "description_en": "Spend 10 gold to upgrade a random card.",
+        "outcomeText_en": "Your gold becomes fuel, and the forge reforges one of your skills."
+      },
+      {
+        "id": "collect_embers",
+        "label": "收集余烬",
+        "description": "收集可交易的炽热余烬，获得金币",
+        "effects": {
+          "goldChange": 18
+        },
+        "outcomeText": "你把温热的余烬收进耐火袋，它们在商人眼中颇有价值。",
+        "label_en": "Collect Embers",
+        "description_en": "Collect tradable hot embers and gain gold.",
+        "outcomeText_en": "You pack the warm embers into a fireproof pouch; merchants will value them."
+      }
+    ],
+    "areaId": "flame",
+    "title_en": "Lava Forge",
+    "description_en": "A massive forge powered by flowing lava stands before you.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 8
+  },
+  {
+    "id": "flame_imp_bet",
+    "title": "小恶魔赌局",
+    "description": "一只小恶魔摇晃骰盅，咧嘴邀请你押上点什么。",
+    "choices": [
+      {
+        "id": "gold_bet",
+        "label": "赌金币",
+        "description": "赢得一笔金币",
+        "effects": {
+          "goldChange": 14
+        },
+        "outcomeText": "小恶魔气得跺脚，你赢走了桌上的金币。",
+        "label_en": "Gold Bet",
+        "description_en": "gain 14 gold",
+        "outcomeText_en": "You choose Gold Bet and continue."
+      },
+      {
+        "id": "body_bet",
+        "label": "赌体力",
+        "description": "失去生命，获得随机通用卡",
+        "effects": {
+          "hpChange": -6,
+          "cardRewardPool": "generic",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "骰子滚出诡异点数，小恶魔递给你一张发烫的卡。",
+        "label_en": "Body Bet",
+        "description_en": "lose 6 HP, gain blue generic card",
+        "outcomeText_en": "You choose Body Bet and continue."
+      },
+      {
+        "id": "raise_stakes",
+        "label": "加大赌注",
+        "description": "风险上升，获得大量金币",
+        "effects": {
+          "goldChange": 30,
+          "riskChange": 12
+        },
+        "outcomeText": "你赢了，但小恶魔的朋友们似乎记住了你的脸。",
+        "label_en": "Raise Stakes",
+        "description_en": "gain 30 gold, raise risk by 12",
+        "outcomeText_en": "You choose Raise Stakes and continue."
+      },
+      {
+        "id": "refuse",
+        "label": "拒绝赌局",
+        "description": "不和恶魔玩骰子",
+        "effects": {},
+        "outcomeText": "你无视挑衅，小恶魔悻悻收起骰盅。",
+        "label_en": "Refuse",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Refuse and continue."
+      }
+    ],
+    "areaId": "flame",
+    "title_en": "Imp Gambler",
+    "description_en": "A mischievous imp challenges you to a game of chance.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 11
+  },
+  {
+    "id": "frost_pool",
+    "title": "冰晶泉水",
+    "description": "一座被冰晶环绕的泉水在月光下闪耀，散发着纯净的魔法能量。",
+    "choices": [
+      {
+        "id": "drink",
+        "label": "饮用泉水",
+        "description": "失去6点生命，手牌上限 +1",
+        "effects": {
+          "hpChange": -6,
+          "handLimitChange": 1
+        },
+        "outcomeText": "刺骨的泉水带走一部分生命力，却让你的意识更加宽广。",
+        "label_en": "Drink",
+        "description_en": "lose 6 HP, increase hand limit by 1",
+        "outcomeText_en": "The icy spring drains some vitality, but expands your focus."
+      },
+      {
+        "id": "collect",
+        "label": "收集冰晶",
+        "description": "带走一些冰晶作为材料，获得金币",
+        "effects": {
+          "goldChange": 22
+        },
+        "outcomeText": "你收集了一些纯净的冰晶，这些深层寒晶能卖出不错的价钱。",
+        "label_en": "Collect",
+        "description_en": "gain 22 gold",
+        "outcomeText_en": "You choose Collect and continue."
+      },
+      {
+        "id": "meditate",
+        "label": "在泉边冥想",
+        "description": "感悟深层寒意，获得一张蓝色卡牌",
+        "effects": {
+          "cardRewardPool": "any",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "在冥想中，你感受到了深层寒意的流动，一张更成熟的技能在脑海中成形。",
+        "label_en": "Meditate by the Spring",
+        "description_en": "Attune to the deep frost and gain a blue card.",
+        "outcomeText_en": "In meditation, you feel deep frost flow through you as a stronger skill takes shape."
+      }
+    ],
+    "areaId": "frost",
+    "title_en": "Crystal Spring",
+    "description_en": "A pool of crystal-clear water shimmers with an otherworldly light.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 3
+  },
+  {
+    "id": "frost_mirror_lake",
+    "title": "镜面冰湖",
+    "description": "冰湖平滑如镜，倒映出的不是现在，而是你未来某场战斗的影子。",
+    "choices": [
+      {
+        "id": "stare",
+        "label": "凝视倒影",
+        "description": "失去13点生命，获得本职业紫色卡牌",
+        "effects": {
+          "hpChange": -13,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "purple"
+        },
+        "outcomeText": "倒影中的招式刺痛了你的精神，却也被你牢牢记住。",
+        "label_en": "Stare",
+        "description_en": "lose 13 HP, gain purple class card",
+        "outcomeText_en": "You choose Stare and continue."
+      },
+      {
+        "id": "break_ice",
+        "label": "打碎冰面",
+        "description": "获得金币",
+        "effects": {
+          "goldChange": 16
+        },
+        "outcomeText": "冰面下冻结着旧时代的货币，你把还能用的部分收了起来。",
+        "label_en": "Break Ice",
+        "description_en": "gain 16 gold",
+        "outcomeText_en": "You choose Break Ice and continue."
+      },
+      {
+        "id": "follow_vision",
+        "label": "追随幻象",
+        "description": "手牌上限 +1，但风险上升",
+        "effects": {
+          "handLimitChange": 1,
+          "riskChange": 8
+        },
+        "outcomeText": "幻象扩大了你的战术视野，也让未知的敌意靠近了你。",
+        "label_en": "Follow Vision",
+        "description_en": "raise risk by 8, increase hand limit by 1",
+        "outcomeText_en": "You choose Follow Vision and continue."
+      }
+    ],
+    "areaId": "frost",
+    "title_en": "Mirror Lake",
+    "description_en": "The frozen lake surface is so smooth it reflects like a mirror.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 8
+  },
+  {
+    "id": "frost_sleeping_spirit",
+    "title": "沉睡冰灵",
+    "description": "一只冰灵蜷缩在雪堆里，怀中抱着发光的霜晶。",
+    "choices": [
+      {
+        "id": "wake",
+        "label": "轻声唤醒",
+        "description": "冰灵以寒霜回应，失去生命，手牌上限 +1",
+        "effects": {
+          "hpChange": -14,
+          "handLimitChange": 1
+        },
+        "outcomeText": "冰灵醒来后向你点头，刺骨的寒意冻伤了你，却让清冷的思绪从此更有节奏。",
+        "label_en": "Wake Gently",
+        "description_en": "The spirit answers with frost, lose HP, hand limit +1",
+        "outcomeText_en": "The spirit nods as biting cold wounds you, yet your thoughts flow with cold clarity ever after."
+      },
+      {
+        "id": "steal_crystal",
+        "label": "偷取冰晶",
+        "description": "获得金币，但失去生命",
+        "effects": {
+          "goldChange": 22,
+          "hpChange": -5
+        },
+        "outcomeText": "霜晶很值钱，但刺骨寒意也割伤了你的手。",
+        "label_en": "Steal Crystal",
+        "description_en": "gain 22 gold, lose 5 HP",
+        "outcomeText_en": "You choose Steal Crystal and continue."
+      },
+      {
+        "id": "offer_gold",
+        "label": "献上金币",
+        "description": "花15金币，恢复大量生命",
+        "effects": {
+          "goldChange": -15,
+          "hpChange": 22
+        },
+        "outcomeText": "冰灵收下金币，霜光化作清凉的治愈力量，迅速抚平你的伤口。",
+        "label_en": "Offer Gold",
+        "description_en": "Spend 15 gold to restore a large amount of HP.",
+        "outcomeText_en": "The spirit accepts the gold, and frostlight becomes soothing power that quickly mends your wounds."
+      }
+    ],
+    "areaId": "frost",
+    "title_en": "Sleeping Frost Spirit",
+    "description_en": "A frost spirit slumbers within a block of ice.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 4
+  },
+  {
+    "id": "chaos_rift",
+    "title": "虚空裂隙",
+    "description": "一道撕裂空间的裂隙出现在你面前，从裂隙中传来低沉的低语。",
+    "choices": [
+      {
+        "id": "enter",
+        "label": "进入裂隙",
+        "description": "冒险进入虚空：损失生命，手牌上限 -1，但获得本职业橙色卡牌",
+        "effects": {
+          "hpChange": -10,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "orange",
+          "handLimitChange": -1
+        },
+        "outcomeText": "你在虚空中经历了严峻的考验，带走了一张强大的本职业卡牌，但混沌压缩了你的手牌上限。",
+        "label_en": "Enter the Rift",
+        "description_en": "Brave the void: lose 10 HP and -1 hand size, but gain an orange class card.",
+        "outcomeText_en": "You endured the void's trial and claimed a powerful class card, but chaos shrank your hand size."
+      },
+      {
+        "id": "seal",
+        "label": "尝试封印",
+        "description": "用魔法能量封印裂隙",
+        "effects": {
+          "goldChange": 20
+        },
+        "outcomeText": "你成功封印了裂隙，虚空的能量凝结成了金币。",
+        "label_en": "Seal",
+        "description_en": "gain 20 gold",
+        "outcomeText_en": "You choose Seal and continue."
+      },
+      {
+        "id": "flee",
+        "label": "远离",
+        "description": "直觉告诉你最好离远点",
+        "effects": {},
+        "outcomeText": "你转身离开，裂隙的低语渐渐远去。",
+        "label_en": "Flee",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Flee and continue."
+      }
+    ],
+    "areaId": "chaos",
+    "title_en": "Void Rift",
+    "description_en": "A tear in reality itself, crackling with chaotic energy.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 9
+  },
+  {
+    "id": "chaos_whispering_idol",
+    "title": "低语神像",
+    "description": "扭曲神像从多个方向同时注视着你，声音直接钻进脑海。",
+    "choices": [
+      {
+        "id": "accept",
+        "label": "接受低语",
+        "description": "失去14点生命，获得本职业橙色卡牌",
+        "effects": {
+          "hpChange": -14,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "orange"
+        },
+        "outcomeText": "你接受了低语，它也在你的灵魂里留下灼痕。",
+        "label_en": "Accept",
+        "description_en": "Lose 14 HP, gain an orange class card.",
+        "outcomeText_en": "You choose Accept and continue."
+      },
+      {
+        "id": "offer_gold",
+        "label": "献上金币",
+        "description": "支付20金币，手牌上限 +1",
+        "effects": {
+          "goldChange": -20,
+          "handLimitChange": 1
+        },
+        "outcomeText": "神像吞下金币，吐出一段混乱但有用的战斗启示，你的掌控力从此更强。",
+        "label_en": "Offer Gold",
+        "description_en": "Spend 20 gold to gain +1 hand size.",
+        "outcomeText_en": "The idol swallows the gold and utters a chaotic but useful insight; your command grows stronger."
+      },
+      {
+        "id": "break_idol",
+        "label": "击碎神像",
+        "description": "获得45金币，但风险大幅上升",
+        "effects": {
+          "goldChange": 45,
+          "riskChange": 15
+        },
+        "outcomeText": "神像碎裂成贵重晶片，远处却响起了回应的低语。",
+        "label_en": "Break Idol",
+        "description_en": "Gain 45 gold, but risk rises sharply.",
+        "outcomeText_en": "You choose Break Idol and continue."
+      },
+      {
+        "id": "leave",
+        "label": "闭耳离开",
+        "description": "不回应低语",
+        "effects": {},
+        "outcomeText": "你压住杂念，离开了神像的视线。",
+        "label_en": "Leave",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Leave and continue."
+      }
+    ],
+    "areaId": "chaos",
+    "title_en": "Whispering Idol",
+    "description_en": "An idol whispers temptations, promising power at a price.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 4
+  },
+  {
+    "id": "chaos_last_camp",
+    "title": "最后的营火",
+    "description": "一团微弱营火在混沌中燃烧，像是大战前最后的喘息。",
+    "choices": [
+      {
+        "id": "bandage",
+        "label": "包扎伤口",
+        "description": "恢复生命",
+        "effects": {
+          "hpChange": 23
+        },
+        "outcomeText": "你借着火光处理伤口，疼痛终于缓和。",
+        "label_en": "Bandage",
+        "description_en": "restore 23 HP",
+        "outcomeText_en": "You choose Bandage and continue."
+      },
+      {
+        "id": "organize",
+        "label": "整理牌组",
+        "description": "移除一张随机基础卡，手牌上限 +1",
+        "effects": {
+          "removeRandomBasicCard": true,
+          "handLimitChange": 1
+        },
+        "outcomeText": "你丢掉已经跟不上节奏的基础招式，牌组变得更紧凑。",
+        "label_en": "Organize",
+        "description_en": "remove a random basic card, increase hand limit by 1",
+        "outcomeText_en": "You choose Organize and continue."
+      },
+      {
+        "id": "take_embers",
+        "label": "搜刮余烬",
+        "description": "获得金币",
+        "effects": {
+          "goldChange": 18
+        },
+        "outcomeText": "余烬里混着可交易的混沌结晶。",
+        "label_en": "Take Embers",
+        "description_en": "gain 18 gold",
+        "outcomeText_en": "You choose Take Embers and continue."
+      }
+    ],
+    "areaId": "chaos",
+    "title_en": "Last Campfire",
+    "description_en": "A dying campfire offers a moment of respite before the final battle.",
+    "scope": "area",
+    "rarity": "normal",
+    "weight": 10
+  },
+  {
+    "id": "field_supply",
+    "title": "路边补给",
+    "description": "一只被遗落的小补给袋挂在路边，里面还有些能立刻派上用场的物资。",
+    "choices": [
+      {
+        "id": "take_food",
+        "label": "取走口粮",
+        "description": "恢复少量生命",
+        "effects": {
+          "hpChange": 8
+        },
+        "outcomeText": "简单的口粮让你恢复了些体力。",
+        "label_en": "Take Rations",
+        "description_en": "Restore a small amount of HP.",
+        "outcomeText_en": "The simple rations restore some of your strength."
+      },
+      {
+        "id": "take_coins",
+        "label": "翻找零钱",
+        "description": "获得少量金币",
+        "effects": {
+          "goldChange": 8
+        },
+        "outcomeText": "你在袋底翻出几枚还能用的金币。",
+        "label_en": "Search for Coins",
+        "description_en": "Gain a small amount of gold.",
+        "outcomeText_en": "You find a few usable coins at the bottom of the bag."
+      },
+      {
+        "id": "leave",
+        "label": "不碰补给",
+        "description": "继续前进",
+        "effects": {},
+        "outcomeText": "你没有动这份来路不明的补给。",
+        "label_en": "Leave It",
+        "description_en": "Move on.",
+        "outcomeText_en": "You leave the unknown supplies untouched."
+      }
+    ],
+    "scope": "generic",
+    "rarity": "normal",
+    "title_en": "Roadside Supplies",
+    "description_en": "A small abandoned supply pouch hangs by the road, still holding useful goods."
+  },
+  {
+    "id": "quiet_waystone",
+    "title": "静默路标",
+    "description": "一块旧路标斜插在地上，刻痕指向几条不同的安全小径。",
+    "choices": [
+      {
+        "id": "safe_path",
+        "label": "选择安全路",
+        "description": "降低风险",
+        "effects": {
+          "riskChange": -8
+        },
+        "outcomeText": "你沿着较安全的小径前进，周围的危险气息稍稍散去。",
+        "label_en": "Choose the Safe Path",
+        "description_en": "Reduce risk.",
+        "outcomeText_en": "You follow the safer path, and the surrounding danger eases."
+      },
+      {
+        "id": "shortcut",
+        "label": "走近路",
+        "description": "获得金币，但风险上升",
+        "effects": {
+          "goldChange": 12,
+          "riskChange": 5
+        },
+        "outcomeText": "近路旁散落着旧钱币，但也留下了新鲜的敌踪。",
+        "label_en": "Take a Shortcut",
+        "description_en": "Gain gold, but risk rises.",
+        "outcomeText_en": "Old coins lie near the shortcut, along with fresh enemy tracks."
+      }
+    ],
+    "scope": "generic",
+    "rarity": "normal",
+    "title_en": "Silent Waystone",
+    "description_en": "An old waystone points toward several safer side paths."
+  },
+  {
+    "id": "rare_starlit_cache",
+    "title": "星光秘匣",
+    "description": "夜色中，一只映着星光的小匣子悄然开启，里面浮动着稀薄却纯净的力量。",
+    "choices": [
+      {
+        "id": "take_card",
+        "label": "汲取星光",
+        "description": "失去少量生命，获得一张随机绿色卡牌",
+        "effects": {
+          "hpChange": -5,
+          "cardRewardPool": "any",
+          "cardRewardRarity": "green"
+        },
+        "outcomeText": "星光刺痛了你，也凝成一张可用的新技艺。",
+        "label_en": "Draw Starlight",
+        "description_en": "Lose a little HP, gain a random Uncommon card.",
+        "outcomeText_en": "The starlight stings, then forms into a useful new technique."
+      },
+      {
+        "id": "sell_shards",
+        "label": "收起星屑",
+        "description": "获得金币",
+        "effects": {
+          "goldChange": 18
+        },
+        "outcomeText": "星屑很快黯淡，但在商人眼中仍颇有价值。",
+        "label_en": "Pocket the Shards",
+        "description_en": "Gain gold.",
+        "outcomeText_en": "The star shards fade quickly, but merchants will still value them."
+      },
+      {
+        "id": "close_cache",
+        "label": "合上秘匣",
+        "description": "不冒险",
+        "effects": {},
+        "outcomeText": "你合上秘匣，让星光归于沉寂。",
+        "label_en": "Close the Cache",
+        "description_en": "Avoid the risk.",
+        "outcomeText_en": "You close the cache and let the starlight fade."
+      }
+    ],
+    "scope": "generic",
+    "rarity": "rare",
+    "title_en": "Starlit Cache",
+    "description_en": "A small cache gleams with faint but pure starlight."
+  },
+  {
+    "id": "universal_altar",
+    "title": "技能升级祭坛",
+    "description": "你遇到了一座破旧但仍在运转的祭坛，可以将一张技能卡提升到新的层次。",
+    "choices": [
+      {
+        "id": "upgrade_starter",
+        "label": "升级初始技能",
+        "description": "免费随机升级一张初始（白色）技能卡",
+        "effects": {
+          "upgradeRandomCard": true,
+          "upgradeBasicOnly": true
+        },
+        "outcomeText": "祭坛发出柔和的光芒，你的一张初始技能卡被注入了新的力量！",
+        "label_en": "Upgrade a Starter Skill",
+        "description_en": "Freely upgrade a random starter (white) skill card.",
+        "outcomeText_en": "The altar glows softly, infusing one of your starter cards with new power!"
+      },
+      {
+        "id": "pay_gold",
+        "label": "献祭祈愿",
+        "description": "花费10金币，随机升级任意一张可升级卡，并恢复8点生命",
+        "effects": {
+          "goldChange": -10,
+          "upgradeRandomCard": true,
+          "hpChange": 8
+        },
+        "outcomeText": "金币化作能量注入你的牌组，一张卡牌闪耀出更强的光芒，温暖的余晖也抚平了你的伤口。",
+        "label_en": "Offer and Pray",
+        "description_en": "Spend 10 gold to upgrade any random upgradable card and heal 8 HP.",
+        "outcomeText_en": "Gold transmutes into power; one of your cards shines brighter while warm light soothes your wounds."
+      },
+      {
+        "id": "skip",
+        "label": "离开",
+        "description": "留到下次再说",
+        "effects": {},
+        "outcomeText": "祭坛的能量缓缓沉寂。",
+        "label_en": "Skip",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Skip and continue."
+      }
+    ],
+    "title_en": "Skill Upgrade Altar",
+    "description_en": "An altar pulsating with mystical energy, offering card upgrades.",
+    "scope": "generic",
+    "rarity": "normal"
+  },
+  {
+    "id": "wandering_cardmaster",
+    "title": "流浪卡牌师",
+    "description": "一名披着旧斗篷的卡牌师坐在路边，面前摊着几张会自己翻面的卡。",
+    "choices": [
+      {
+        "id": "buy_lesson",
+        "label": "购买技巧",
+        "description": "支付金币，获得本职业蓝色卡牌",
+        "effects": {
+          "goldChange": -16,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "卡牌师收下金币，教给你一段实用技巧。",
+        "label_en": "Buy Lesson",
+        "description_en": "spend 16 gold, gain blue class card",
+        "outcomeText_en": "You choose Buy Lesson and continue."
+      },
+      {
+        "id": "duel_cards",
+        "label": "切磋牌艺",
+        "description": "失去生命，随机升级一张卡",
+        "effects": {
+          "hpChange": -6,
+          "upgradeRandomCard": true
+        },
+        "outcomeText": "切磋让你吃了点苦头，但也看清了一张卡的进阶方向。",
+        "label_en": "Duel Cards",
+        "description_en": "lose 6 HP, upgrade a random card",
+        "outcomeText_en": "You choose Duel Cards and continue."
+      },
+      {
+        "id": "ask_basics",
+        "label": "请教基础",
+        "description": "获得随机通用绿色卡牌",
+        "effects": {
+          "cardRewardPool": "generic",
+          "cardRewardRarity": "green"
+        },
+        "outcomeText": "基础并不花哨，却总能在关键时刻派上用场。",
+        "label_en": "Ask Basics",
+        "description_en": "gain green generic card",
+        "outcomeText_en": "You choose Ask Basics and continue."
+      },
+      {
+        "id": "farewell",
+        "label": "告辞",
+        "description": "不打扰卡牌师",
+        "effects": {},
+        "outcomeText": "你向卡牌师点头致意，然后继续前进。",
+        "label_en": "Farewell",
+        "description_en": "Leave without taking an effect",
+        "outcomeText_en": "You choose Farewell and continue."
+      }
+    ],
+    "title_en": "Wandering Card Master",
+    "description_en": "A mysterious card master offers to trade cards with you.",
+    "scope": "generic",
+    "rarity": "rare"
+  },
+  {
+    "id": "forest_heart_grove",
+    "title": "心木林祭",
+    "description": "森林最深处，一株千年心木静静伫立，根系间流淌着浓郁到几乎成形的生命之力。机会只有一次。",
+    "choices": [
+      {
+        "id": "commune",
+        "label": "与心木共鸣",
+        "description": "失去生命，获得一张本职业蓝色卡牌",
+        "effects": {
+          "hpChange": -10,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "blue"
+        },
+        "outcomeText": "心木的意志涌入你的灵魂，一段实用而稀有的技艺在脑海中成形。",
+        "label_en": "Commune with the Heartwood",
+        "description_en": "Lose HP, gain a class Rare card.",
+        "outcomeText_en": "The heartwood's will floods your soul, and a practical rare art takes shape in your mind."
+      },
+      {
+        "id": "graft",
+        "label": "嫁接生命",
+        "description": "献上28金币，永久提升生命上限 +10",
+        "effects": {
+          "goldChange": -28,
+          "maxHpChange": 10
+        },
+        "outcomeText": "心木的根须缠上你的身躯，你感到生命的容器被永久拓宽了。",
+        "label_en": "Graft Life",
+        "description_en": "Offer 28 gold to permanently raise max HP by 10.",
+        "outcomeText_en": "The heartwood's roots coil around you; the vessel of your life is permanently widened."
+      },
+      {
+        "id": "prune",
+        "label": "修剪心木",
+        "description": "移除一张随机基础卡，并随机升级一张卡",
+        "effects": {
+          "removeRandomBasicCard": true,
+          "upgradeRandomCard": true
+        },
+        "outcomeText": "你剪去枯枝，心木以新生回报——牌组中冗余被剔除，一张技艺得到淬炼。",
+        "label_en": "Prune the Heartwood",
+        "description_en": "Remove a random basic card and upgrade a random card.",
+        "outcomeText_en": "You cut away the dead wood; the heartwood rewards you—a redundant card is removed and one skill is refined."
+      },
+      {
+        "id": "leave",
+        "label": "默默离去",
+        "description": "不打扰古老的存在",
+        "effects": {},
+        "outcomeText": "你向心木鞠躬，悄然退去。",
+        "label_en": "Leave Quietly",
+        "description_en": "Do not disturb the ancient being.",
+        "outcomeText_en": "You bow to the heartwood and slip away."
+      }
+    ],
+    "areaId": "forest",
+    "title_en": "Rite of the Heartwood Grove",
+    "description_en": "Deep in the forest stands a thousand-year heartwood, its roots brimming with life force. The chance comes but once.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 2
+  },
+  {
+    "id": "ruins_vault_core",
+    "title": "遗迹核心宝库",
+    "description": "层层机关之后，一座古文明的核心宝库展现在眼前。守护符文仍在低鸣，但宝藏触手可及。",
+    "choices": [
+      {
+        "id": "seize_relic",
+        "label": "夺取遗物",
+        "description": "失去10点生命，获得一张本职业紫色卡牌",
+        "effects": {
+          "hpChange": -10,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "purple"
+        },
+        "outcomeText": "符文的反噬撕裂了你的护甲，但遗物中的强大技艺已尽归你手。",
+        "label_en": "Seize the Relic",
+        "description_en": "Lose 10 HP, gain a class Epic card.",
+        "outcomeText_en": "The wards lash back and tear your guard, but the relic's powerful art is now yours."
+      },
+      {
+        "id": "decode_core",
+        "label": "解析核心",
+        "description": "花35金币，永久提升生命上限 +14",
+        "effects": {
+          "goldChange": -35,
+          "maxHpChange": 14
+        },
+        "outcomeText": "你解开了核心的运作之理，体魄被古老符文永久强化。",
+        "label_en": "Decode the Core",
+        "description_en": "Spend 35 gold to permanently raise max HP by 14.",
+        "outcomeText_en": "You unravel the core's principles; ancient runes permanently reinforce your body."
+      },
+      {
+        "id": "loot_hoard",
+        "label": "搜刮宝库",
+        "description": "获得36金币，但风险大幅上升",
+        "effects": {
+          "goldChange": 36,
+          "riskChange": 14
+        },
+        "outcomeText": "你装满了行囊，但警报般的符文之声已传遍整片遗迹。",
+        "label_en": "Loot the Hoard",
+        "description_en": "Gain 36 gold, but risk rises sharply.",
+        "outcomeText_en": "You fill your pack, but the wards' alarm-like wail now echoes through the ruins."
+      },
+      {
+        "id": "withdraw",
+        "label": "全身而退",
+        "description": "不冒险，安全离开",
+        "effects": {},
+        "outcomeText": "有些宝藏的代价太高，你选择全身而退。",
+        "label_en": "Withdraw",
+        "description_en": "Play it safe and leave.",
+        "outcomeText_en": "Some treasures cost too much; you choose to withdraw intact."
+      }
+    ],
+    "areaId": "ruins",
+    "title_en": "Vault Core of the Ruins",
+    "description_en": "Beyond layers of traps lies the core vault of a lost civilization. The wards still hum, but the treasure is within reach.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 3
+  },
+  {
+    "id": "flame_forge_eternal",
+    "title": "永燃熔心",
+    "description": "烈焰之地的最深处，一团永不熄灭的熔心在咆哮。传说在此淬炼的技艺，足以焚尽一切。",
+    "choices": [
+      {
+        "id": "temper_soul",
+        "label": "以魂淬炼",
+        "description": "失去大量生命，获得一张本职业橙色卡牌",
+        "effects": {
+          "hpChange": -14,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "orange"
+        },
+        "outcomeText": "你将灵魂投入熔心，痛楚换来一段足以焚毁强敌的传说技艺。",
+        "label_en": "Temper with Soul",
+        "description_en": "Lose major HP, gain a class Legendary card.",
+        "outcomeText_en": "You cast your soul into the forge; agony buys you a legendary art that burns through mighty foes."
+      },
+      {
+        "id": "forge_double",
+        "label": "双重锻打",
+        "description": "花20金币，随机升级一张卡（任意）",
+        "effects": {
+          "goldChange": -20,
+          "upgradeRandomCard": true
+        },
+        "outcomeText": "熔心的烈焰反复锻打你的一张技艺，使其脱胎换骨。",
+        "label_en": "Double Forging",
+        "description_en": "Spend 20 gold to upgrade a random card.",
+        "outcomeText_en": "The forge hammers one of your skills again and again, reforging it anew."
+      },
+      {
+        "id": "ember_gamble",
+        "label": "押注余烬",
+        "description": "失去生命换取更多金币",
+        "effects": {
+          "hpChange": -8,
+          "goldChange": 42
+        },
+        "outcomeText": "你赤手探入熔心，灼伤换来一捧价值惊人的炽热余烬。",
+        "label_en": "Gamble on the Embers",
+        "description_en": "Lose HP to gain even more gold.",
+        "outcomeText_en": "You plunge your hands into the forge; the burns earn you a handful of precious embers."
+      },
+      {
+        "id": "step_back",
+        "label": "退避热浪",
+        "description": "热浪太盛，暂且退开",
+        "effects": {},
+        "outcomeText": "熔心的热浪逼人，你选择不与之纠缠。",
+        "label_en": "Step Back",
+        "description_en": "The heat is too much; step away.",
+        "outcomeText_en": "The forge's heat is overwhelming; you choose not to tangle with it."
+      }
+    ],
+    "areaId": "flame",
+    "title_en": "Eternal Forge Heart",
+    "description_en": "In the deepest flames roars an ever-burning forge heart. Arts tempered here are said to incinerate all.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 2
+  },
+  {
+    "id": "frost_frozen_throne",
+    "title": "冰封王座",
+    "description": "神殿尽头，一具坐于冰封王座上的远古亡王凝视着你。它的力量仍在，等待一个继承者，或一个祭品。",
+    "choices": [
+      {
+        "id": "claim_throne",
+        "label": "继承王权",
+        "description": "失去16点生命，获得一张本职业红色卡牌",
+        "effects": {
+          "hpChange": -16,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "red"
+        },
+        "outcomeText": "亡王的寒霜灌入你的血脉，你继承了它沉睡千年的神话之力。",
+        "label_en": "Claim the Throne",
+        "description_en": "Lose 16 HP, gain a class Mythic card.",
+        "outcomeText_en": "The dead king's frost floods your veins; you inherit its mythic power, asleep for a thousand years."
+      },
+      {
+        "id": "frozen_oath",
+        "label": "冰封誓约",
+        "description": "献上40金币，永久提升生命上限 +15",
+        "effects": {
+          "goldChange": -40,
+          "maxHpChange": 15
+        },
+        "outcomeText": "你立下冰封誓约，亡王的庇护让你的躯体如寒冰般坚韧持久。",
+        "label_en": "Frozen Oath",
+        "description_en": "Offer 40 gold to permanently raise max HP by 15.",
+        "outcomeText_en": "You swear the frozen oath; the king's protection makes your body as enduring as ice."
+      },
+      {
+        "id": "shatter_crown",
+        "label": "击碎王冠",
+        "description": "移除一张随机基础卡，并获得本职业紫色卡牌",
+        "effects": {
+          "removeRandomBasicCard": true,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "purple"
+        },
+        "outcomeText": "你击碎冰封王冠，散落的霜晶中凝结出一张属于你的强大技艺，旧日的累赘也随之消融。",
+        "label_en": "Shatter the Crown",
+        "description_en": "Remove a random basic card and gain a class Epic card.",
+        "outcomeText_en": "You shatter the frozen crown; from the scattered frost a powerful skill forms, and old dead weight melts away."
+      },
+      {
+        "id": "kneel_leave",
+        "label": "俯首退离",
+        "description": "不惊扰沉睡的亡王",
+        "effects": {},
+        "outcomeText": "你向亡王俯首，悄然退出王座大厅。",
+        "label_en": "Bow and Leave",
+        "description_en": "Do not disturb the slumbering king.",
+        "outcomeText_en": "You bow to the dead king and slip out of the throne hall."
+      }
+    ],
+    "areaId": "frost",
+    "title_en": "The Frozen Throne",
+    "description_en": "At the temple's end, an ancient dead king upon a frozen throne watches you—awaiting an heir, or a sacrifice.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 2
+  },
+  {
+    "id": "chaos_void_altar",
+    "title": "虚空终焉祭坛",
+    "description": "混沌深渊的核心，一座以虚空本身铸成的祭坛悬浮于无尽黑暗之上。它低语着：献祭，或被献祭。",
+    "choices": [
+      {
+        "id": "embrace_void",
+        "label": "拥抱虚空",
+        "description": "失去大量生命与手牌上限，获得一张本职业红色卡牌",
+        "effects": {
+          "hpChange": -11,
+          "handLimitChange": -1,
+          "cardRewardPool": "class",
+          "cardRewardRarity": "red"
+        },
+        "outcomeText": "虚空吞噬了你的一部分，作为交换，无可匹敌的神话之力在掌心成形。",
+        "label_en": "Embrace the Void",
+        "description_en": "Lose major HP and -1 hand size, gain a class Mythic card.",
+        "outcomeText_en": "The void devours part of you; in exchange, unmatched mythic power forms in your palm."
+      },
+      {
+        "id": "void_ascension",
+        "label": "虚空飞升",
+        "description": "献上48金币，永久提升生命上限 +18 与能量上限 +1",
+        "effects": {
+          "goldChange": -48,
+          "maxHpChange": 18,
+          "maxEnergyChange": 1
+        },
+        "outcomeText": "你将财富献给虚空，肉身与灵魂都被推向了全新的境界。",
+        "label_en": "Void Ascension",
+        "description_en": "Offer 48 gold to permanently raise max HP and max energy.",
+        "outcomeText_en": "You offer your wealth to the void; both body and soul are pushed to a new height."
+      },
+      {
+        "id": "all_or_nothing",
+        "label": "孤注一掷",
+        "description": "押上生命，极高风险换取一张通用红色卡牌",
+        "effects": {
+          "hpChange": -10,
+          "riskChange": 20,
+          "cardRewardPool": "generic",
+          "cardRewardRarity": "red"
+        },
+        "outcomeText": "你押上了一切，虚空回报以神话之力，但深渊的目光已牢牢锁定你，伤痕深入骨髓。",
+        "label_en": "All or Nothing",
+        "description_en": "Wager your life: extreme risk for a generic Mythic card.",
+        "outcomeText_en": "You bet everything; the void rewards you with mythic power, but the abyss's gaze locks onto you and wounds bite to the bone."
+      },
+      {
+        "id": "refuse_void",
+        "label": "拒绝献祭",
+        "description": "不向虚空低头",
+        "effects": {},
+        "outcomeText": "你转身背对祭坛，拒绝成为虚空的一部分。",
+        "label_en": "Refuse the Sacrifice",
+        "description_en": "Do not bow to the void.",
+        "outcomeText_en": "You turn your back on the altar, refusing to become part of the void."
+      }
+    ],
+    "areaId": "chaos",
+    "title_en": "Altar of Void's End",
+    "description_en": "At the abyss's core floats an altar forged from the void itself. It whispers: sacrifice, or be sacrificed.",
+    "scope": "area",
+    "rarity": "rare",
+    "weight": 1
+  }
+]

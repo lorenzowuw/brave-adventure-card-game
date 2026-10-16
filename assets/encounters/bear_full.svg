@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 168" width="120" height="168">
+<rect x="4" y="4" width="112" height="160" rx="8" fill="#F5E6C8" stroke="#6D4C2A" stroke-width="2"/>
+<rect x="8" y="8" width="104" height="96" rx="6" fill="#FFF8E7" stroke="#6D4C2A" stroke-width="1"/>
+<text x="60" y="68" text-anchor="middle" font-size="52">🐻</text>
+<text x="60" y="120" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2C1810">巨熊</text>
+<text x="60" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#7F8C8D">HP 15 | ATK 4</text>
+</svg>

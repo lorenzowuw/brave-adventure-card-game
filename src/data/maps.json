@@ -1,0 +1,157 @@
+[
+  {
+    "id": "forest_map",
+    "areaId": "forest",
+    "layers": [
+      {
+        "nodes": [
+          { "type": "battle", "id": "f1_1", "label": "狼群出没", "enemies": ["forest_wolf"], "nextNodes": ["f2_1", "f2_2"] },
+          { "type": "battle", "id": "f1_2", "label": "树精领地", "enemies": ["forest_treant"], "nextNodes": ["f2_2", "f2_3"] },
+          { "type": "rest", "id": "f1_3", "label": "林间空地", "nextNodes": ["f2_3"] }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "battle", "id": "f2_1", "label": "深入密林", "enemies": ["forest_wolf", "forest_treant"], "nextNodes": ["f3_1", "f3_2"] },
+          { "type": "shop", "id": "f2_2", "label": "游商营地", "nextNodes": ["f3_2", "f3_3"] },
+          { "type": "event", "id": "f2_3", "label": "林中小屋", "nextNodes": ["f3_3"] }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "elite", "id": "f3_1", "label": "暗影潜伏者", "enemies": ["forest_shadow"] },
+          { "type": "battle", "id": "f3_2", "label": "兽群围攻", "enemies": ["forest_wolf", "forest_wolf"] },
+          { "type": "skill_altar", "id": "f3_3", "label": "古老祭坛" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "rest", "id": "f4_1", "label": "安全营地" },
+          { "type": "event", "id": "f4_2", "label": "神秘足迹" },
+          { "type": "reward", "id": "f4_3", "label": "宝藏洞穴" }
+        ]
+      }
+    ],
+    "boss": { "type": "boss", "id": "f_boss", "label": "树精之王", "enemies": ["boss_tree_king"] }
+  },
+  {
+    "id": "ruins_map",
+    "areaId": "ruins",
+    "layers": [
+      {
+        "nodes": [
+          { "type": "battle", "id": "r1_1", "label": "石像守卫", "enemies": ["ruins_golem"] },
+          { "type": "shop", "id": "r1_2", "label": "遗迹商人" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "battle", "id": "r2_1", "label": "机关走廊", "enemies": ["ruins_golem", "ruins_golem"] },
+          { "type": "event", "id": "r2_2", "label": "符文房间" },
+          { "type": "rest", "id": "r2_3", "label": "坍塌庭院" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "elite", "id": "r3_1", "label": "幽灵领主", "enemies": ["ruins_ghost"] },
+          { "type": "skill_altar", "id": "r3_2", "label": "强化祭坛" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "battle", "id": "r4_1", "label": "最终防线", "enemies": ["ruins_golem", "ruins_ghost"] },
+          { "type": "reward", "id": "r4_2", "label": "宝库" }
+        ]
+      }
+    ],
+    "boss": { "type": "boss", "id": "r_boss", "label": "遗迹守灵", "enemies": ["boss_ruins_watcher"] }
+  },
+  {
+    "id": "flame_map",
+    "areaId": "flame",
+    "layers": [
+      {
+        "nodes": [
+          { "type": "battle", "id": "fm1_1", "label": "火魔巢穴", "enemies": ["flame_imp"] },
+          { "type": "battle", "id": "fm1_2", "label": "熔岩裂缝", "enemies": ["flame_imp", "flame_imp"] },
+          { "type": "event", "id": "fm1_3", "label": "灰烬中的交易" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "battle", "id": "fm2_1", "label": "灼热走廊", "enemies": ["flame_imp", "flame_lava_beast"] },
+          { "type": "shop", "id": "fm2_2", "label": "火中商铺" },
+          { "type": "rest", "id": "fm2_3", "label": "冷却岩洞" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "elite", "id": "fm3_1", "label": "熔岩巨兽", "enemies": ["flame_lava_beast"] },
+          { "type": "reward", "id": "fm3_2", "label": "火山宝库" },
+          { "type": "skill_altar", "id": "fm3_3", "label": "烈焰祭坛" }
+        ]
+      }
+    ],
+    "boss": { "type": "boss", "id": "fm_boss", "label": "炎魔领主", "enemies": ["boss_flame_lord"] }
+  },
+  {
+    "id": "frost_map",
+    "areaId": "frost",
+    "layers": [
+      {
+        "nodes": [
+          { "type": "battle", "id": "fr1_1", "label": "寒冰走廊", "enemies": ["frost_wraith"] },
+          { "type": "event", "id": "fr1_2", "label": "冰晶泉水" },
+          { "type": "shop", "id": "fr1_3", "label": "冰中商铺" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "battle", "id": "fr2_1", "label": "霜冻庭院", "enemies": ["frost_wraith", "frost_revenant"] },
+          { "type": "rest", "id": "fr2_2", "label": "温暖洞穴" },
+          { "type": "elite", "id": "fr2_3", "label": "冰霜守卫", "enemies": ["frost_guardian"] }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "skill_altar", "id": "fr3_1", "label": "冰霜祭坛" },
+          { "type": "reward", "id": "fr3_2", "label": "冰晶宝库" }
+        ]
+      }
+    ],
+    "boss": { "type": "boss", "id": "fr_boss", "label": "冰霜巨龙", "enemies": ["boss_frost_dragon"] }
+  },
+  {
+    "id": "chaos_map",
+    "areaId": "chaos",
+    "layers": [
+      {
+        "nodes": [
+          { "type": "battle", "id": "ch1_1", "label": "虚空裂隙", "enemies": ["chaos_spawn"] },
+          { "type": "event", "id": "ch1_2", "label": "低语之源" },
+          { "type": "rest", "id": "ch1_3", "label": "扭曲庇护所" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "elite", "id": "ch2_1", "label": "混沌魔影", "enemies": ["chaos_phantom"] },
+          { "type": "elite", "id": "ch2_2", "label": "混沌畸变体", "enemies": ["chaos_aberration"] },
+          { "type": "shop", "id": "ch2_3", "label": "虚空商贩" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "battle", "id": "ch3_1", "label": "最终试炼", "enemies": ["chaos_spawn", "chaos_spawn"] },
+          { "type": "skill_altar", "id": "ch3_2", "label": "混沌祭坛" },
+          { "type": "reward", "id": "ch3_3", "label": "虚空宝藏" }
+        ]
+      },
+      {
+        "nodes": [
+          { "type": "rest", "id": "ch4_1", "label": "最后休整" }
+        ]
+      }
+    ],
+    "boss": { "type": "boss", "id": "ch_boss", "label": "混沌之主", "enemies": ["boss_chaos_lord"] }
+  }
+]

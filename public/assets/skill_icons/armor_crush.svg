@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="粉碎打击">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="96" r="74" fill="#636d6e" opacity="0.12"/>
+    <path d="M56 96 L96 96 M50 70 L92 84 M50 122 L92 108" stroke="#636d6e" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M96 64 H150 C166 64 174 76 174 96 C174 124 156 140 132 140 H96 Z" fill="#2d3131" stroke="#636d6e" stroke-width="5"/>
+    <path d="M96 82 H150 M96 100 H160 M96 118 H150" stroke="#7c8989" stroke-width="4" opacity="0.7"/>
+    <path d="M158 96 L182 80 M170 110 L196 104" stroke="#7c8989" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">粉碎打击</text>
+</svg>

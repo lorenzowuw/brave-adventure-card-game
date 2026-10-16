@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="元素引爆">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="96" r="80" fill="none" stroke="#e08a30" stroke-width="2.5" opacity="0.55"/>
+    <circle cx="128" cy="96" r="74" fill="#e0521a" opacity="0.18"/>
+    <g stroke="#e07a2a" stroke-width="6" stroke-linecap="round" opacity="0.75">
+      <path d="M128 40 L128 70"/><path d="M128 122 L128 152"/><path d="M72 96 L102 96"/><path d="M154 96 L184 96"/>
+      <path d="M88 56 L108 76"/><path d="M168 56 L148 76"/><path d="M88 136 L108 116"/><path d="M168 136 L148 116"/>
+    </g>
+    <circle cx="128" cy="96" r="34" fill="#5a2410" stroke="#e07a2a" stroke-width="5"/>
+    <path d="M128 74 C140 86 140 92 134 100 C146 98 150 108 144 118 C138 110 132 112 128 118 C124 112 118 110 112 118 C106 108 110 98 122 100 C116 92 116 86 128 74 Z" fill="#ffc060"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">元素引爆</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="圣光裁决·神话">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#451612"/>
+      <stop offset="58%" stop-color="#26100e"/>
+      <stop offset="100%" stop-color="#090608"/>
+    </radialGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff9cf"/>
+      <stop offset="45%" stop-color="#ffd36b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M20 154 C74 132 174 132 236 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="92" r="72" fill="none" stroke="#ef4444" stroke-width="4" opacity="0.85"/>
+    <path d="M128 20 L139 81 L195 59 L149 101 L183 156 L128 124 L73 156 L107 101 L61 59 L117 81 Z" fill="#ffd36b" opacity="0.38"/>
+    <path d="M128 30 L148 86 L128 154 L108 86 Z" fill="url(#blade)" stroke="#fff0a8" stroke-width="5"/>
+    <path d="M82 88 L174 88" stroke="#fff0a8" stroke-width="9" stroke-linecap="round"/>
+    <path d="M99 111 C117 126 139 126 157 111" fill="none" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/>
+    <g stroke="#fff0a8" stroke-width="5" stroke-linecap="round">
+      <path d="M58 45 L84 64"/><path d="M198 45 L172 64"/>
+      <path d="M46 102 L78 96"/><path d="M210 102 L178 96"/>
+    </g>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">圣光裁决</text>
+</svg>

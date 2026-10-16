@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="挑衅架势·卓越">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="94" r="74" fill="#4687cc" opacity="0.12"/>
+    <path d="M52 60 C40 78 40 114 52 132 M204 60 C216 78 216 114 204 132" stroke="#4687cc" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.55"/>
+    <path d="M128 32 L184 52 V102 C184 134 158 154 128 164 C98 154 72 134 72 102 V52 Z" fill="#1f3d5c" stroke="#4687cc" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="128" cy="96" r="22" fill="none" stroke="#7dafe4" stroke-width="6"/>
+    <path d="M128 80 V112 M112 96 H144" stroke="#7dafe4" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">挑衅架势·卓越</text>
+</svg>

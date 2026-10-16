@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="饕餮">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="96" r="80" fill="none" stroke="#4a90d9" stroke-width="2.5" opacity="0.55"/>
+    <circle cx="128" cy="96" r="72" fill="#a84881" opacity="0.15"/>
+    <path d="M128 30 C176 30 206 62 206 100 C206 140 172 164 128 164 C84 164 50 140 50 100 C50 62 80 30 128 30 Z" fill="#4b1636" stroke="#a84881" stroke-width="5"/>
+    <path d="M128 58 C158 58 178 78 178 100 C178 124 156 140 128 140 C100 140 78 124 78 100 C78 78 98 58 128 58 Z" fill="#0a0509"/>
+    <g fill="#cb92b4">
+      <path d="M104 60 L114 80 L124 60 Z"/><path d="M132 58 L142 80 L152 60 Z"/>
+      <path d="M104 132 L114 112 L124 132 Z"/><path d="M132 134 L142 112 L152 132 Z"/>
+      <path d="M70 96 L92 88 L92 104 Z"/><path d="M186 96 L164 88 L164 104 Z"/>
+    </g>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">饕餮</text>
+</svg>

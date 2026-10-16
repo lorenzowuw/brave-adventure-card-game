@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="冰霜祷言">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="94" r="76" fill="#7ed7ff" opacity="0.13"/>
+    <path d="M128 34 L146 72 L188 78 L158 108 L166 150 L128 130 L90 150 L98 108 L68 78 L110 72 Z" fill="#12384c" stroke="#7ed7ff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M128 46 V136 M88 84 L168 126 M168 84 L88 126" stroke="#b9f2ff" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="128" cy="104" r="14" fill="none" stroke="#e4fbff" stroke-width="4"/>
+    <path d="M70 48 C88 38 98 44 106 58 M186 48 C168 38 158 44 150 58" stroke="#b9f2ff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.72"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">冰霜祷言</text>
+</svg>

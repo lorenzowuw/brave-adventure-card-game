@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="冰棱反制·神话">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="96" r="74" fill="#65d6ff" opacity="0.13"/>
+    <path d="M74 138 L106 48 L128 136 Z" fill="#11394a" stroke="#6bdcff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M122 150 L150 36 L182 148 Z" fill="#11394a" stroke="#d6fbff" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M78 78 H54 M178 80 H202 M100 146 L78 166 M156 148 L180 166" stroke="#6bdcff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="128" cy="96" r="18" fill="#d6fbff" opacity="0.3"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">冰棱反制·神话</text>
+</svg>

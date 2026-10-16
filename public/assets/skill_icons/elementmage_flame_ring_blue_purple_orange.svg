@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="烈焰环·传说">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="96" r="50" fill="none" stroke="#8e44ad" stroke-width="12" opacity="0.85"/>
+    <circle cx="128" cy="96" r="50" fill="none" stroke="#bb8fce" stroke-width="4"/>
+    <g fill="#401f4e" stroke="#8e44ad" stroke-width="3">
+      <path d="M128 34 C134 44 134 50 128 54 C122 50 122 44 128 34 Z"/>
+      <path d="M190 96 C180 102 174 102 170 96 C174 90 180 90 190 96 Z"/>
+      <path d="M128 158 C122 148 122 142 128 138 C134 142 134 148 128 158 Z"/>
+      <path d="M66 96 C76 90 82 90 86 96 C82 102 76 102 66 96 Z"/>
+    </g>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">烈焰环·传说</text>
+</svg>

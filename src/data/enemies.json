@@ -1,0 +1,6106 @@
+[
+  {
+    "id": "forest_wolf",
+    "name": "森林狼",
+    "tier": "normal",
+    "hp": 24,
+    "energy": 3,
+    "description": "迷雾森林中常见的掠食者，成群出没。",
+    "deck": [
+      {
+        "id": "w_pounce",
+        "name": "扑咬",
+        "name_en": "Pounce",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 4
+        },
+        "description": "造成4点伤害。",
+        "description_en": "Deal 4 damage."
+      },
+      {
+        "id": "w_bite",
+        "name": "撕咬",
+        "name_en": "Bite",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害，施加1层流血。",
+        "description_en": "Deal 3 damage, Apply 1 Bleed."
+      },
+      {
+        "id": "w_bite2",
+        "name": "撕咬",
+        "name_en": "Bite",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害，施加1层流血。",
+        "description_en": "Deal 3 damage, Apply 1 Bleed."
+      },
+      {
+        "id": "w_bite3",
+        "name": "撕咬",
+        "name_en": "Bite",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害，施加1层流血。",
+        "description_en": "Deal 3 damage, Apply 1 Bleed."
+      },
+      {
+        "id": "w_snap",
+        "name": "迅咬",
+        "name_en": "Quick Snap",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 2,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成2点伤害，施加1层流血。",
+        "description_en": "Deal 2 damage, Apply 1 Bleed."
+      },
+      {
+        "id": "w_flank",
+        "name": "侧袭",
+        "name_en": "Flank",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4
+        },
+        "description": "造成4点伤害。",
+        "description_en": "Deal 4 damage."
+      },
+      {
+        "id": "w_guard",
+        "name": "警戒",
+        "name_en": "Guard",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "w_howl",
+        "name": "狼嚎",
+        "name_en": "Wolf Howl",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 1,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加1层强化。",
+        "description_en": "Apply 1 Empower to self."
+      }
+    ],
+    "rewards": {
+      "exp": 10,
+      "gold": 7,
+      "cardRarity": "white"
+    },
+    "area": "forest",
+    "traits": [
+      "beast",
+      "forest"
+    ],
+    "weaknesses": [
+      "bleed",
+      "fire"
+    ],
+    "resistances": [
+      "poison"
+    ],
+    "traitHints": [
+      "野兽会连续撕咬，流血和火焰能快速压低血量。"
+    ],
+    "name_en": "Forest Wolf",
+    "description_en": "A common predator of the misty forest, often hunts in packs.",
+    "traitHints_en": [
+      "Beasts chain bites together—bleed and fire quickly whittle them down."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "forest_treant",
+    "name": "树精",
+    "tier": "normal",
+    "hp": 25,
+    "energy": 4,
+    "description": "被古老魔法唤醒的古树，行动缓慢但防御极高。",
+    "deck": [
+      {
+        "id": "t_sweep",
+        "name": "枝干横扫",
+        "name_en": "Branch Sweep",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成5点伤害，施加1层麻痹。",
+        "description_en": "Deal 5 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "t_jab",
+        "name": "枝干敲击",
+        "name_en": "Branch Jab",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 3
+        },
+        "description": "造成3点伤害。",
+        "description_en": "Deal 3 damage."
+      },
+      {
+        "id": "t_bark",
+        "name": "树皮硬化",
+        "name_en": "Bark Harden",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "t_bark2",
+        "name": "树皮硬化",
+        "name_en": "Bark Harden",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "t_rootguard",
+        "name": "根须护壁",
+        "name_en": "Root Guard",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 1
+        },
+        "description": "获得1点护甲。",
+        "description_en": "Gain 1 armor."
+      },
+      {
+        "id": "t_regen",
+        "name": "自然回复",
+        "name_en": "Nature's Mend",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 2,
+          "applyStatus": {
+            "type": "regen",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复2点生命，为自身施加2层再生。",
+        "description_en": "Heal 2 HP, Apply 2 Regen to self."
+      },
+      {
+        "id": "t_regen2",
+        "name": "自然回复",
+        "name_en": "Nature's Mend",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 2,
+          "applyStatus": {
+            "type": "regen",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复2点生命，为自身施加2层再生。",
+        "description_en": "Heal 2 HP, Apply 2 Regen to self."
+      },
+      {
+        "id": "t_sap",
+        "name": "汲取树液",
+        "name_en": "Sap Drain",
+        "cost": 1,
+        "type": "heal",
+        "effect": {
+          "heal": 1
+        },
+        "description": "恢复1点生命。",
+        "description_en": "Heal 1 HP."
+      }
+    ],
+    "rewards": {
+      "exp": 12,
+      "gold": 7,
+      "cardRarity": "white"
+    },
+    "area": "forest",
+    "traits": [
+      "plant",
+      "forest"
+    ],
+    "weaknesses": [
+      "fire",
+      "armor_break"
+    ],
+    "resistances": [
+      "poison",
+      "nature"
+    ],
+    "traitHints": [
+      "植物会回复和叠甲，火焰技能能造成双倍伤害。"
+    ],
+    "name_en": "Treant",
+    "description_en": "An ancient tree awakened by old magic, slow but highly defensive.",
+    "traitHints_en": [
+      "Vulnerable to fire attacks."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "forest_shadow",
+    "name": "暗影兽",
+    "tier": "elite",
+    "hp": 40,
+    "energy": 5,
+    "description": "潜伏在迷雾中的暗影生物，行动诡秘。",
+    "deck": [
+      {
+        "id": "s_strike",
+        "name": "暗影突袭",
+        "name_en": "Shadow Strike",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加1层虚弱。",
+        "description_en": "Deal 5 damage, Apply 1 Weak."
+      },
+      {
+        "id": "s_strike2",
+        "name": "暗影突袭",
+        "name_en": "Shadow Strike",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加1层虚弱。",
+        "description_en": "Deal 5 damage, Apply 1 Weak."
+      },
+      {
+        "id": "s_bind",
+        "name": "暗影缠绕",
+        "name_en": "Shadow Bind",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 2,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成2点伤害，施加1层麻痹。",
+        "description_en": "Deal 2 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "s_claw",
+        "name": "致命扑击",
+        "name_en": "Lethal Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加2层流血。",
+        "description_en": "Deal 5 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "s_claw2",
+        "name": "致命扑击",
+        "name_en": "Lethal Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加2层流血。",
+        "description_en": "Deal 5 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "s_gloom",
+        "name": "暗影低语",
+        "name_en": "Gloom Whisper",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "施加1层虚弱。",
+        "description_en": "Apply 1 Weak."
+      },
+      {
+        "id": "s_ambush",
+        "name": "雾中伏击",
+        "name_en": "Mist Ambush",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加1层流血。",
+        "description_en": "Deal 4 damage, Apply 1 Bleed."
+      },
+      {
+        "id": "s_hide",
+        "name": "融入阴影",
+        "name_en": "Fade into Shadow",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "s_frenzy",
+        "name": "狂暴暗影",
+        "name_en": "Frenzied Shadow",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7
+        },
+        "description": "造成7点伤害。",
+        "description_en": "Deal 7 damage."
+      },
+      {
+        "id": "s_rend",
+        "name": "撕裂尖爪",
+        "name_en": "Rending Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层流血。",
+        "description_en": "Deal 6 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "s_strikeplus",
+        "name": "暗影突袭·强",
+        "name_en": "Shadow Strike+",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加1层虚弱。",
+        "description_en": "Deal 6 damage, Apply 1 Weak."
+      },
+      {
+        "id": "s_bloodmist",
+        "name": "暗影乱舞",
+        "name_en": "Shadow Flurry",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 3,
+          "damageMultiplier": 3,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害3次，施加2层流血。",
+        "description_en": "Deal 3 damage 3 times, Apply 2 Bleed."
+      },
+      {
+        "id": "s_dread",
+        "name": "恐惧压迫",
+        "name_en": "Dread Pressure",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 1
+          }
+        },
+        "description": "施加2层虚弱。",
+        "description_en": "Apply 2 Weak."
+      },
+      {
+        "id": "s_shadowguard",
+        "name": "暗影护幕",
+        "name_en": "Shadow Veil",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 25,
+      "gold": 15,
+      "cardRarity": "blue"
+    },
+    "area": "forest",
+    "traits": [
+      "beast",
+      "shadow"
+    ],
+    "weaknesses": [
+      "holy",
+      "fire"
+    ],
+    "resistances": [
+      "shadow"
+    ],
+    "traitHints": [
+      "暗影生物会施加虚弱，圣光和火焰能克制它。"
+    ],
+    "name_en": "Forest Shadow",
+    "description_en": "A shadow creature lurking in the mist, moves with eerie grace.",
+    "traitHints_en": [
+      "Holy light deals extra damage."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "boss_tree_king",
+    "name": "树精之王",
+    "tier": "boss",
+    "hp": 60,
+    "energy": 6,
+    "description": "迷雾森林的统治者，拥有操纵植物的力量。",
+    "deck": [
+      {
+        "id": "tk_smash",
+        "name": "根须重击",
+        "name_en": "Root Smash",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层流血。",
+        "description_en": "Deal 6 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "tk_crush",
+        "name": "巨木横扫",
+        "name_en": "Timber Crush",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 9
+        },
+        "description": "造成9点伤害。",
+        "description_en": "Deal 9 damage."
+      },
+      {
+        "id": "tk_regen",
+        "name": "古木回春",
+        "name_en": "Ancient Regrowth",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 4,
+          "applyStatus": {
+            "type": "regen",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复4点生命，为自身施加2层再生。",
+        "description_en": "Heal 4 HP, Apply 2 Regen to self."
+      },
+      {
+        "id": "tk_bind",
+        "name": "根须缠绕",
+        "name_en": "Root Bind",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成4点伤害，施加1层麻痹。",
+        "description_en": "Deal 4 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "tk_regen_a",
+        "name": "古木回春",
+        "name_en": "Ancient Regrowth",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 3,
+          "applyStatus": {
+            "type": "regen",
+            "value": 1,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复3点生命，为自身施加1层再生。",
+        "description_en": "Heal 3 HP, Apply 1 Regen to self."
+      },
+      {
+        "id": "tk_bind2",
+        "name": "根须缠绕",
+        "name_en": "Root Bind",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成4点伤害，施加1层麻痹。",
+        "description_en": "Deal 4 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "tk_summon_a",
+        "name": "召唤树苗",
+        "name_en": "Summon Saplings",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5
+        },
+        "description": "造成5点伤害。",
+        "description_en": "Deal 5 damage."
+      },
+      {
+        "id": "tk_bark",
+        "name": "王木护甲",
+        "name_en": "Royal Bark",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 4
+        },
+        "description": "获得4点护甲。",
+        "description_en": "Gain 4 armor."
+      },
+      {
+        "id": "tk_thorn",
+        "name": "荆棘鞭笞",
+        "name_en": "Thorn Lash",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加1层流血。",
+        "description_en": "Deal 4 damage, Apply 1 Bleed."
+      },
+      {
+        "id": "tk_lash",
+        "name": "根须绞杀",
+        "name_en": "Root Strangle",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成10点伤害，施加2层流血。",
+        "description_en": "Deal 10 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "tk_quake",
+        "name": "大地践踏",
+        "name_en": "Earth Trample",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成7点伤害，施加1层麻痹。",
+        "description_en": "Deal 7 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "tk_summon",
+        "name": "召唤树苗",
+        "name_en": "Summon Saplings",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5
+        },
+        "description": "造成5点伤害。",
+        "description_en": "Deal 5 damage."
+      },
+      {
+        "id": "tk_regen2",
+        "name": "古木回春",
+        "name_en": "Ancient Regrowth",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 5,
+          "applyStatus": {
+            "type": "regen",
+            "value": 1,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复5点生命，为自身施加1层再生。",
+        "description_en": "Heal 5 HP, Apply 1 Regen to self."
+      },
+      {
+        "id": "tk_overgrowth",
+        "name": "林冠压制",
+        "name_en": "Overgrowth",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成5点伤害，施加1层麻痹。",
+        "description_en": "Deal 5 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "tk_heartwood",
+        "name": "王树心材",
+        "name_en": "Heartwood",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 10
+        },
+        "description": "获得10点护甲。",
+        "description_en": "Gain 10 armor."
+      },
+      {
+        "id": "tk_furyroot",
+        "name": "暴怒根须",
+        "name_en": "Fury Roots",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      }
+    ],
+    "rewards": {
+      "exp": 50,
+      "gold": 34,
+      "cardRarity": "purple"
+    },
+    "area": "forest",
+    "traits": [
+      "plant",
+      "boss",
+      "forest"
+    ],
+    "weaknesses": [
+      "fire",
+      "armor_break"
+    ],
+    "resistances": [
+      "poison"
+    ],
+    "traitHints": [
+      "树精之王会再生和缠绕，火焰牌是最有效的突破口。"
+    ],
+    "name_en": "Tree King",
+    "description_en": "Ruler of the Misty Forest, commands the power of plants.",
+    "traitHints_en": [
+      "The Tree King regenerates and entangles. Fire cards are the best way through."
+    ],
+    "handSize": 5
+  },
+  {
+    "id": "ruins_golem",
+    "name": "石像兵",
+    "tier": "normal",
+    "hp": 35,
+    "energy": 4,
+    "description": "古城遗迹中的活化雕像，古老守卫的残骸。",
+    "deck": [
+      {
+        "id": "g_punch",
+        "name": "机关重拳",
+        "name_en": "Gear Punch",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6
+        },
+        "description": "造成6点伤害。",
+        "description_en": "Deal 6 damage."
+      },
+      {
+        "id": "g_punch2",
+        "name": "机关重拳",
+        "name_en": "Gear Punch",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6
+        },
+        "description": "造成6点伤害。",
+        "description_en": "Deal 6 damage."
+      },
+      {
+        "id": "g_guard",
+        "name": "装甲展开",
+        "name_en": "Armor Deploy",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "g_guard2",
+        "name": "装甲展开",
+        "name_en": "Armor Deploy",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "g_guard3",
+        "name": "装甲展开",
+        "name_en": "Armor Deploy",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "g_plating",
+        "name": "厚重石甲",
+        "name_en": "Stone Plating",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "g_quake",
+        "name": "碎甲震荡",
+        "name_en": "Sundering Quake",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害，施加2层脆弱。",
+        "description_en": "Deal 3 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "g_curse",
+        "name": "破甲咒印",
+        "name_en": "Sundering Sigil",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "施加3层脆弱。",
+        "description_en": "Apply 3 Fragile."
+      }
+    ],
+    "rewards": {
+      "exp": 11,
+      "gold": 5,
+      "cardRarity": "white"
+    },
+    "area": "ruins",
+    "traits": [
+      "construct",
+      "ruins"
+    ],
+    "weaknesses": [
+      "armor_break",
+      "lightning"
+    ],
+    "resistances": [
+      "poison",
+      "bleed"
+    ],
+    "traitHints": [
+      "构装体不怕流血和毒；它会叠加脆弱让你更易受伤，速战速决或先清脆弱。"
+    ],
+    "name_en": "Ruins Golem",
+    "description_en": "An animated statue from ancient ruins, remnants of old guardians.",
+    "traitHints_en": [
+      "Armor-breaking attacks are effective."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "ruins_ghost",
+    "name": "遗迹幽灵",
+    "tier": "elite",
+    "hp": 60,
+    "energy": 5,
+    "description": "徘徊在古城中的残魂，能穿透物理防御。",
+    "deck": [
+      {
+        "id": "rg_wail",
+        "name": "怨灵嚎叫",
+        "name_en": "Wraith Wail",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加1层虚弱。",
+        "description_en": "Deal 7 damage, Apply 1 Weak."
+      },
+      {
+        "id": "rg_wail2",
+        "name": "怨灵嚎叫",
+        "name_en": "Wraith Wail",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加1层虚弱。",
+        "description_en": "Deal 7 damage, Apply 1 Weak."
+      },
+      {
+        "id": "rg_curse",
+        "name": "虚弱诅咒",
+        "name_en": "Weakening Curse",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 2,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成2点伤害，施加2层虚弱。",
+        "description_en": "Deal 2 damage, Apply 2 Weak."
+      },
+      {
+        "id": "rg_touch",
+        "name": "腐蚀之触",
+        "name_en": "Corroding Touch",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加2层脆弱。",
+        "description_en": "Deal 7 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "rg_touch2",
+        "name": "腐蚀之触",
+        "name_en": "Corroding Touch",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加2层脆弱。",
+        "description_en": "Deal 7 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "rg_drain",
+        "name": "灵魂汲取",
+        "name_en": "Soul Drain",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "damage": 4,
+          "heal": 3
+        },
+        "description": "造成4点伤害，恢复3点生命。",
+        "description_en": "Deal 4 damage, Heal 3 HP."
+      },
+      {
+        "id": "rg_sap",
+        "name": "意志削弱",
+        "name_en": "Will Sap",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "施加1层虚弱。",
+        "description_en": "Apply 1 Weak."
+      },
+      {
+        "id": "rg_phase",
+        "name": "灵体闪避",
+        "name_en": "Ethereal Veil",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "rg_doomwail",
+        "name": "末日嚎叫",
+        "name_en": "Doom Wail",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加2层虚弱。",
+        "description_en": "Deal 7 damage, Apply 2 Weak."
+      },
+      {
+        "id": "rg_brittlehex",
+        "name": "脆骨咒",
+        "name_en": "Brittle Hex",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害，施加3层脆弱。",
+        "description_en": "Deal 3 damage, Apply 3 Fragile."
+      },
+      {
+        "id": "rg_haunt",
+        "name": "缠魂",
+        "name_en": "Haunt",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 1
+          }
+        },
+        "description": "施加2层虚弱。",
+        "description_en": "Apply 2 Weak."
+      },
+      {
+        "id": "rg_soulrend",
+        "name": "魂体撕裂",
+        "name_en": "Soul Rend",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加2层脆弱。",
+        "description_en": "Deal 7 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "rg_drain2",
+        "name": "灵魂汲取",
+        "name_en": "Soul Drain",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "damage": 5,
+          "heal": 3
+        },
+        "description": "造成5点伤害，恢复3点生命。",
+        "description_en": "Deal 5 damage, Heal 3 HP."
+      },
+      {
+        "id": "rg_mist",
+        "name": "亡雾护身",
+        "name_en": "Grave Mist",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 6
+        },
+        "description": "获得6点护甲。",
+        "description_en": "Gain 6 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 22,
+      "gold": 10,
+      "cardRarity": "blue"
+    },
+    "area": "ruins",
+    "traits": [
+      "undead",
+      "spirit",
+      "ruins"
+    ],
+    "weaknesses": [
+      "holy",
+      "fire"
+    ],
+    "resistances": [
+      "bleed",
+      "poison"
+    ],
+    "traitHints": [
+      "幽灵会绕过防御施加虚弱，圣光技能最稳定。"
+    ],
+    "name_en": "Ruins Wraith",
+    "description_en": "A lingering spirit in the ancient city, ignores physical defenses.",
+    "traitHints_en": [
+      "Weak to holy magic."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "boss_ruins_watcher",
+    "name": "遗迹守灵",
+    "tier": "boss",
+    "hp": 90,
+    "energy": 7,
+    "description": "古城遗迹的最终守卫，融合了机关与亡灵之力。",
+    "deck": [
+      {
+        "id": "rw_beam",
+        "name": "审判光束",
+        "name_en": "Judgment Beam",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成10点伤害，施加2层流血。",
+        "description_en": "Deal 10 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "rw_fortify",
+        "name": "自我修复",
+        "name_en": "Self Repair",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 4
+        },
+        "description": "恢复4点生命。",
+        "description_en": "Heal 4 HP."
+      },
+      {
+        "id": "rw_curse",
+        "name": "弱化领域",
+        "name_en": "Field of Weakness",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害，施加2层虚弱。",
+        "description_en": "Deal 3 damage, Apply 2 Weak."
+      },
+      {
+        "id": "rw_smash",
+        "name": "古城重击",
+        "name_en": "Ruin Smash",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      },
+      {
+        "id": "rw_plate",
+        "name": "机关护壁",
+        "name_en": "Gear Bulwark",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "rw_plate2",
+        "name": "机关护壁",
+        "name_en": "Gear Bulwark",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "rw_spiritbind",
+        "name": "亡灵牵引",
+        "name_en": "Spirit Tether",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加2层脆弱。",
+        "description_en": "Deal 4 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "rw_sentry",
+        "name": "机关齐射",
+        "name_en": "Sentry Volley",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8
+        },
+        "description": "造成8点伤害。",
+        "description_en": "Deal 8 damage."
+      },
+      {
+        "id": "rw_repairfield",
+        "name": "修复领域",
+        "name_en": "Repair Field",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 3,
+          "armor": 3
+        },
+        "description": "获得3点护甲，恢复3点生命。",
+        "description_en": "Gain 3 armor, Heal 3 HP."
+      },
+      {
+        "id": "rw_shatter",
+        "name": "破甲诅咒",
+        "name_en": "Shatter Curse",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加3层脆弱。",
+        "description_en": "Deal 4 damage, Apply 3 Fragile."
+      },
+      {
+        "id": "rw_judgment",
+        "name": "终焉审判",
+        "name_en": "Final Judgment",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "weak",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加3层虚弱。",
+        "description_en": "Deal 12 damage, Apply 3 Weak."
+      },
+      {
+        "id": "rw_summon",
+        "name": "唤醒守卫",
+        "name_en": "Awaken Guards",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6
+        },
+        "description": "造成6点伤害。",
+        "description_en": "Deal 6 damage."
+      },
+      {
+        "id": "rw_gearstorm",
+        "name": "机关风暴",
+        "name_en": "Gear Storm",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成10点伤害，施加2层脆弱。",
+        "description_en": "Deal 10 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "rw_soulseal",
+        "name": "魂印封锁",
+        "name_en": "Soul Seal",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加2层虚弱。",
+        "description_en": "Deal 5 damage, Apply 2 Weak."
+      },
+      {
+        "id": "rw_overhaul",
+        "name": "核心重构",
+        "name_en": "Core Overhaul",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 5,
+          "armor": 6
+        },
+        "description": "获得6点护甲，恢复5点生命。",
+        "description_en": "Gain 6 armor, Heal 5 HP."
+      },
+      {
+        "id": "rw_lasergrid",
+        "name": "光束矩阵",
+        "name_en": "Laser Grid",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      }
+    ],
+    "rewards": {
+      "exp": 55,
+      "gold": 32,
+      "cardRarity": "purple"
+    },
+    "area": "ruins",
+    "traits": [
+      "construct",
+      "undead",
+      "boss",
+      "ruins"
+    ],
+    "weaknesses": [
+      "holy",
+      "armor_break"
+    ],
+    "resistances": [
+      "poison",
+      "bleed"
+    ],
+    "traitHints": [
+      "遗迹守灵兼具机关与亡灵特性，破甲和圣光能突破。"
+    ],
+    "name_en": "Ruins Watcher",
+    "description_en": "The final guardian of the ancient ruins, a fusion of machinery and undead power.",
+    "traitHints_en": [
+      "The Ruins Watcher is both construct and undead. Armor-break and holy light can pierce it."
+    ],
+    "handSize": 5,
+    "currentHp": 90
+  },
+  {
+    "id": "flame_imp",
+    "name": "小火魔",
+    "tier": "normal",
+    "hp": 47,
+    "energy": 4,
+    "description": "烈焰之地最低级的恶魔，数量众多。",
+    "deck": [
+      {
+        "id": "fi_claw",
+        "name": "烈焰爪击",
+        "name_en": "Flame Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加1层灼烧。",
+        "description_en": "Deal 8 damage, Apply 1 Burn."
+      },
+      {
+        "id": "fi_claw2",
+        "name": "烈焰爪击",
+        "name_en": "Flame Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加1层灼烧。",
+        "description_en": "Deal 8 damage, Apply 1 Burn."
+      },
+      {
+        "id": "fi_spark",
+        "name": "火星迸射",
+        "name_en": "Spark Burst",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "burn",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加1层灼烧。",
+        "description_en": "Deal 4 damage, Apply 1 Burn."
+      },
+      {
+        "id": "fi_spark2",
+        "name": "火星迸射",
+        "name_en": "Spark Burst",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "burn",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加1层灼烧。",
+        "description_en": "Deal 4 damage, Apply 1 Burn."
+      },
+      {
+        "id": "fi_spark3",
+        "name": "火星迸射",
+        "name_en": "Spark Burst",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "burn",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加1层灼烧。",
+        "description_en": "Deal 4 damage, Apply 1 Burn."
+      },
+      {
+        "id": "fi_empower",
+        "name": "火苗暴涨",
+        "name_en": "Flame Surge",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 1,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加1层强化。",
+        "description_en": "Apply 1 Empower to self."
+      },
+      {
+        "id": "fi_kindling",
+        "name": "添柴",
+        "name_en": "Kindling",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 1,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加1层强化。",
+        "description_en": "Apply 1 Empower to self."
+      },
+      {
+        "id": "fi_guard",
+        "name": "余烬护体",
+        "name_en": "Ember Guard",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 1
+        },
+        "description": "获得1点护甲。",
+        "description_en": "Gain 1 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 10,
+      "gold": 10,
+      "cardRarity": "white"
+    },
+    "area": "flame",
+    "traits": [
+      "demon",
+      "fire"
+    ],
+    "weaknesses": [
+      "ice"
+    ],
+    "resistances": [
+      "fire",
+      "burn"
+    ],
+    "traitHints": [
+      "火魔抗火但怕冰，拖久会被灼烧消耗。"
+    ],
+    "name_en": "Flame Imp",
+    "description_en": "The lowest demon of the Flame Lands, appears in great numbers.",
+    "traitHints_en": [
+      "Weak to ice and water magic."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "flame_lava_beast",
+    "name": "熔岩兽",
+    "tier": "elite",
+    "hp": 101,
+    "energy": 6,
+    "description": "由熔岩凝聚而成的巨兽，触之即熔。",
+    "deck": [
+      {
+        "id": "lb_maul",
+        "name": "熔岩撕咬",
+        "name_en": "Lava Maul",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成10点伤害，施加3层灼烧。",
+        "description_en": "Deal 10 damage, Apply 3 Burn."
+      },
+      {
+        "id": "lb_shell",
+        "name": "熔岩硬壳",
+        "name_en": "Lava Shell",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "lb_shell2",
+        "name": "熔岩硬壳",
+        "name_en": "Lava Shell",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "lb_smash",
+        "name": "岩浆重砸",
+        "name_en": "Magma Smash",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 14
+        },
+        "description": "造成14点伤害。",
+        "description_en": "Deal 14 damage."
+      },
+      {
+        "id": "lb_slowburn",
+        "name": "熔流灼烧",
+        "name_en": "Lava Flow",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加2层灼烧。",
+        "description_en": "Deal 8 damage, Apply 2 Burn."
+      },
+      {
+        "id": "lb_moltenhide",
+        "name": "熔化护甲",
+        "name_en": "Molten Hide",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "lb_heatup",
+        "name": "热能回涌",
+        "name_en": "Heat Surge",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 1
+        },
+        "description": "获得1点蓝量。",
+        "description_en": "Gain 1 mana."
+      },
+      {
+        "id": "lb_heatup2",
+        "name": "热能回涌",
+        "name_en": "Heat Surge",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 1
+        },
+        "description": "获得1点蓝量。",
+        "description_en": "Gain 1 mana."
+      },
+      {
+        "id": "lb_erupt",
+        "name": "熔岩喷发",
+        "name_en": "Lava Eruption",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加3层灼烧。",
+        "description_en": "Deal 12 damage, Apply 3 Burn."
+      },
+      {
+        "id": "lb_obsidian",
+        "name": "黑曜石壳",
+        "name_en": "Obsidian Shell",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 12
+        },
+        "description": "获得12点护甲。",
+        "description_en": "Gain 12 armor."
+      },
+      {
+        "id": "lb_crush",
+        "name": "熔岩碾压",
+        "name_en": "Lava Crush",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 13
+        },
+        "description": "造成13点伤害。",
+        "description_en": "Deal 13 damage."
+      },
+      {
+        "id": "lb_heatwave",
+        "name": "热浪压迫",
+        "name_en": "Heat Wave",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加2层灼烧。",
+        "description_en": "Deal 7 damage, Apply 2 Burn."
+      },
+      {
+        "id": "lb_core",
+        "name": "熔核回蓝",
+        "name_en": "Molten Core",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 2
+        },
+        "description": "获得2点蓝量。",
+        "description_en": "Gain 2 mana."
+      },
+      {
+        "id": "lb_plate",
+        "name": "岩浆厚壳",
+        "name_en": "Magma Plate",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 11
+        },
+        "description": "获得11点护甲。",
+        "description_en": "Gain 11 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 28,
+      "gold": 14,
+      "cardRarity": "blue"
+    },
+    "area": "flame",
+    "traits": [
+      "beast",
+      "fire"
+    ],
+    "weaknesses": [
+      "ice",
+      "armor_break"
+    ],
+    "resistances": [
+      "fire",
+      "bleed"
+    ],
+    "traitHints": [
+      "熔岩兽护甲高且抗火，冰霜与破甲是关键。"
+    ],
+    "name_en": "Lava Beast",
+    "description_en": "A giant beast formed from molten lava, burns everything it touches.",
+    "traitHints_en": [
+      "Ice magic can slow it down."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "boss_flame_lord",
+    "name": "炎魔领主",
+    "tier": "boss",
+    "hp": 159,
+    "energy": 7,
+    "description": "烈焰之地的主宰，纯粹的毁灭化身。",
+    "deck": [
+      {
+        "id": "fl_blast",
+        "name": "地狱火球",
+        "name_en": "Hellfire Blast",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 14,
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成14点伤害，施加3层灼烧。",
+        "description_en": "Deal 14 damage, Apply 3 Burn."
+      },
+      {
+        "id": "fl_infernal",
+        "name": "地狱之火",
+        "name_en": "Infernal Flame",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "heal": 4,
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复4点生命，为自身施加2层强化。",
+        "description_en": "Heal 4 HP, Apply 2 Empower to self."
+      },
+      {
+        "id": "fl_inferno",
+        "name": "烈焰风暴",
+        "name_en": "Flame Storm",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 16,
+          "applyStatus": {
+            "type": "burn",
+            "value": 4,
+            "duration": 2
+          }
+        },
+        "description": "造成16点伤害，施加4层灼烧。",
+        "description_en": "Deal 16 damage, Apply 4 Burn."
+      },
+      {
+        "id": "fl_sparkstorm",
+        "name": "火雨",
+        "name_en": "Fire Rain",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加2层灼烧。",
+        "description_en": "Deal 9 damage, Apply 2 Burn."
+      },
+      {
+        "id": "fl_sparkstorm2",
+        "name": "炼狱连爆",
+        "name_en": "Inferno Barrage",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "damageMultiplier": 4,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害4次，施加2层灼烧。",
+        "description_en": "Deal 4 damage 4 times, Apply 2 Burn."
+      },
+      {
+        "id": "fl_emberheal",
+        "name": "余烬复燃",
+        "name_en": "Ember Rekindle",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 5
+        },
+        "description": "恢复5点生命。",
+        "description_en": "Heal 5 HP."
+      },
+      {
+        "id": "fl_command",
+        "name": "恶魔号令",
+        "name_en": "Demon Command",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "fl_heatguard",
+        "name": "炎盾",
+        "name_en": "Flame Shield",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 4
+        },
+        "description": "获得4点护甲。",
+        "description_en": "Gain 4 armor."
+      },
+      {
+        "id": "fl_manasurge",
+        "name": "火脉涌动",
+        "name_en": "Fire Vein Surge",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 1
+        },
+        "description": "获得1点蓝量。",
+        "description_en": "Gain 1 mana."
+      },
+      {
+        "id": "fl_cataclysm",
+        "name": "灭世烈焰",
+        "name_en": "Cataclysm",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 15,
+          "applyStatus": {
+            "type": "burn",
+            "value": 5,
+            "duration": 3
+          }
+        },
+        "description": "造成15点伤害，施加5层灼烧。",
+        "description_en": "Deal 15 damage, Apply 5 Burn."
+      },
+      {
+        "id": "fl_scorch",
+        "name": "灼热诅咒",
+        "name_en": "Scorching Curse",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加2层虚弱。",
+        "description_en": "Deal 5 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fl_supernova",
+        "name": "炽焰超新星",
+        "name_en": "Supernova",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 16,
+          "applyStatus": {
+            "type": "burn",
+            "value": 6,
+            "duration": 2
+          }
+        },
+        "description": "造成16点伤害，施加6层灼烧。",
+        "description_en": "Deal 16 damage, Apply 6 Burn."
+      },
+      {
+        "id": "fl_immolate",
+        "name": "献祭之炎",
+        "name_en": "Immolate",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加3层灼烧。",
+        "description_en": "Deal 8 damage, Apply 3 Burn."
+      },
+      {
+        "id": "fl_rekindle",
+        "name": "领主复燃",
+        "name_en": "Lord Rekindle",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 6,
+          "applyStatus": {
+            "type": "empower",
+            "value": 1,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复6点生命，为自身施加1层强化。",
+        "description_en": "Heal 6 HP, Apply 1 Empower to self."
+      },
+      {
+        "id": "fl_ashenarmor",
+        "name": "灰烬护甲",
+        "name_en": "Ashen Armor",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 10
+        },
+        "description": "获得10点护甲。",
+        "description_en": "Gain 10 armor."
+      },
+      {
+        "id": "fl_flareup",
+        "name": "烈焰升腾",
+        "name_en": "Flare Up",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 2
+        },
+        "description": "获得2点蓝量。",
+        "description_en": "Gain 2 mana."
+      }
+    ],
+    "rewards": {
+      "exp": 60,
+      "gold": 42,
+      "cardRarity": "purple"
+    },
+    "area": "flame",
+    "traits": [
+      "demon",
+      "fire",
+      "boss"
+    ],
+    "weaknesses": [
+      "ice"
+    ],
+    "resistances": [
+      "fire",
+      "burn"
+    ],
+    "traitHints": [
+      "炎魔领主几乎不怕火焰，冰霜牌能造成双倍伤害。"
+    ],
+    "name_en": "Flame Lord",
+    "description_en": "Ruler of the Flame Lands, the embodiment of pure destruction.",
+    "traitHints_en": [
+      "The Flame Lord shrugs off fire. Frost cards deal double damage."
+    ],
+    "handSize": 5
+  },
+  {
+    "id": "frost_wraith",
+    "name": "冰霜怨灵",
+    "tier": "normal",
+    "hp": 67,
+    "energy": 4,
+    "description": "冰封神殿中的寒冰亡灵，散发着刺骨的寒气。",
+    "deck": [
+      {
+        "id": "fw_chill",
+        "name": "寒冰打击",
+        "name_en": "Frost Strike",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成9点伤害，施加1层虚弱。",
+        "description_en": "Deal 9 damage, Apply 1 Weak."
+      },
+      {
+        "id": "fw_freeze",
+        "name": "冰冻",
+        "name_en": "Freeze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成3点伤害，施加1层麻痹。",
+        "description_en": "Deal 3 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fw_freeze2",
+        "name": "冰冻",
+        "name_en": "Freeze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成3点伤害，施加1层麻痹。",
+        "description_en": "Deal 3 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fw_freeze3",
+        "name": "冰冻",
+        "name_en": "Freeze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 3,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成3点伤害，施加1层麻痹。",
+        "description_en": "Deal 3 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fw_shard",
+        "name": "冰锥",
+        "name_en": "Ice Shard",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4
+        },
+        "description": "造成4点伤害。",
+        "description_en": "Deal 4 damage."
+      },
+      {
+        "id": "fw_shard2",
+        "name": "冰锥",
+        "name_en": "Ice Shard",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4
+        },
+        "description": "造成4点伤害。",
+        "description_en": "Deal 4 damage."
+      },
+      {
+        "id": "fw_frostveil",
+        "name": "寒雾护身",
+        "name_en": "Frost Veil",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 1
+        },
+        "description": "获得1点护甲。",
+        "description_en": "Gain 1 armor."
+      },
+      {
+        "id": "fw_grasp",
+        "name": "冷魂抓握",
+        "name_en": "Cold Grasp",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "施加1层麻痹。",
+        "description_en": "Apply 1 Paralyze."
+      }
+    ],
+    "rewards": {
+      "exp": 12,
+      "gold": 5,
+      "cardRarity": "white"
+    },
+    "area": "frost",
+    "traits": [
+      "undead",
+      "frost"
+    ],
+    "weaknesses": [
+      "fire",
+      "holy"
+    ],
+    "resistances": [
+      "ice"
+    ],
+    "traitHints": [
+      "冰霜怨灵抗冰，火焰技能会造成双倍伤害。"
+    ],
+    "name_en": "Frost Wraith",
+    "description_en": "An icy undead spirit from the Frost Temple, radiates bone-chilling cold.",
+    "traitHints_en": [
+      "Fire magic melts its defenses."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "boss_frost_dragon",
+    "name": "冰霜巨龙",
+    "tier": "boss",
+    "hp": 210,
+    "energy": 8,
+    "description": "冰封神殿的霸主，上古冰霜巨龙。",
+    "deck": [
+      {
+        "id": "fd_breath",
+        "name": "冰霜吐息",
+        "name_en": "Frost Breath",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 16,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成16点伤害，施加2层虚弱。",
+        "description_en": "Deal 16 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fd_scales",
+        "name": "寒冰愈合",
+        "name_en": "Frost Mend",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 5
+        },
+        "description": "恢复5点生命。",
+        "description_en": "Heal 5 HP."
+      },
+      {
+        "id": "fd_tail",
+        "name": "寒冰尾扫",
+        "name_en": "Frost Tail",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 19,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成19点伤害，施加1层麻痹。",
+        "description_en": "Deal 19 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fd_claw",
+        "name": "寒冰连爪",
+        "name_en": "Frost Claw Flurry",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "damageMultiplier": 4,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害4次，施加1层虚弱。",
+        "description_en": "Deal 5 damage 4 times, Apply 1 Weak."
+      },
+      {
+        "id": "fd_freezegaze",
+        "name": "冻结凝视",
+        "name_en": "Freezing Gaze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成6点伤害，施加1层麻痹。",
+        "description_en": "Deal 6 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fd_icearmor",
+        "name": "冰鳞护甲",
+        "name_en": "Ice Scale Armor",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "fd_mend2",
+        "name": "寒冰愈合",
+        "name_en": "Frost Mend",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 5
+        },
+        "description": "恢复5点生命。",
+        "description_en": "Heal 5 HP."
+      },
+      {
+        "id": "fd_bite",
+        "name": "龙牙撕咬",
+        "name_en": "Dragon Bite",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 17
+        },
+        "description": "造成17点伤害。",
+        "description_en": "Deal 17 damage."
+      },
+      {
+        "id": "fd_chillroar",
+        "name": "寒潮咆哮",
+        "name_en": "Chilling Roar",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "施加2层虚弱。",
+        "description_en": "Apply 2 Weak."
+      },
+      {
+        "id": "fd_blizzard",
+        "name": "绝对零度",
+        "name_en": "Absolute Zero",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 15,
+          "applyStatus": {
+            "type": "weak",
+            "value": 4,
+            "duration": 2
+          }
+        },
+        "description": "造成15点伤害，施加4层虚弱。",
+        "description_en": "Deal 15 damage, Apply 4 Weak."
+      },
+      {
+        "id": "fd_deepfreeze",
+        "name": "深度冻结",
+        "name_en": "Deep Freeze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 2,
+            "duration": 1
+          }
+        },
+        "description": "造成5点伤害，施加2层麻痹。",
+        "description_en": "Deal 5 damage, apply 2 Paralyze."
+      },
+      {
+        "id": "fd_avalanche",
+        "name": "极寒雪崩",
+        "name_en": "Avalanche",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 17,
+          "applyStatus": {
+            "type": "weak",
+            "value": 5,
+            "duration": 2
+          }
+        },
+        "description": "造成17点伤害，施加5层虚弱。",
+        "description_en": "Deal 17 damage, Apply 5 Weak."
+      },
+      {
+        "id": "fd_glacierheal",
+        "name": "冰川复苏",
+        "name_en": "Glacier Renewal",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 7,
+          "applyStatus": {
+            "type": "regen",
+            "value": 1,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复7点生命，为自身施加1层再生。",
+        "description_en": "Heal 7 HP, Apply 1 Regen to self."
+      },
+      {
+        "id": "fd_frostbite",
+        "name": "霜咬",
+        "name_en": "Frostbite",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成9点伤害，施加1层麻痹。",
+        "description_en": "Deal 9 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fd_whiteout",
+        "name": "白霜遮蔽",
+        "name_en": "Whiteout",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "weak",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加3层虚弱。",
+        "description_en": "Deal 6 damage, Apply 3 Weak."
+      },
+      {
+        "id": "fd_hardscale",
+        "name": "坚冰龙鳞",
+        "name_en": "Hard Ice Scales",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 12
+        },
+        "description": "获得12点护甲。",
+        "description_en": "Gain 12 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 70,
+      "gold": 40,
+      "cardRarity": "orange"
+    },
+    "area": "frost",
+    "traits": [
+      "dragon",
+      "frost",
+      "boss"
+    ],
+    "weaknesses": [
+      "fire"
+    ],
+    "resistances": [
+      "ice",
+      "weak"
+    ],
+    "traitHints": [
+      "冰霜巨龙抗冰，火焰技能会造成双倍伤害。"
+    ],
+    "name_en": "Frost Dragon",
+    "description_en": "Overlord of the Frost Temple, an ancient ice dragon of immense power.",
+    "traitHints_en": [
+      "The Frost Dragon resists ice. Fire skills deal double damage."
+    ],
+    "handSize": 5
+  },
+  {
+    "id": "frost_revenant",
+    "name": "冰封死灵",
+    "tier": "normal",
+    "hp": 70,
+    "energy": 4,
+    "description": "被永冻封印的古代战士，挥舞着结霜的断刃。",
+    "deck": [
+      {
+        "id": "fr_slash",
+        "name": "碎冰拳",
+        "name_en": "Ice Fist",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加1层虚弱。",
+        "description_en": "Deal 9 damage, Apply 1 Weak."
+      },
+      {
+        "id": "fr_slash2",
+        "name": "碎冰拳",
+        "name_en": "Ice Fist",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加1层虚弱。",
+        "description_en": "Deal 9 damage, Apply 1 Weak."
+      },
+      {
+        "id": "fr_guard",
+        "name": "寒冰护盾",
+        "name_en": "Frost Guard",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fr_guard2",
+        "name": "寒冰护盾",
+        "name_en": "Frost Guard",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fr_revive",
+        "name": "亡者复苏",
+        "name_en": "Revenant Renewal",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "regen",
+            "value": 3,
+            "duration": 3,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加3层再生。",
+        "description_en": "Apply 3 Regen to self."
+      },
+      {
+        "id": "fr_coldgnaw",
+        "name": "寒蚀",
+        "name_en": "Cold Gnaw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加2层虚弱。",
+        "description_en": "Deal 7 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fr_iceplate",
+        "name": "冰甲凝结",
+        "name_en": "Ice Plate",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fr_coldmend",
+        "name": "寒气续息",
+        "name_en": "Cold Renewal",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "heal": 2,
+          "applyStatus": {
+            "type": "regen",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复2点生命，为自身施加2层再生。",
+        "description_en": "Heal 2 HP, Apply 2 Regen to self."
+      }
+    ],
+    "rewards": {
+      "exp": 14,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "frost",
+    "traits": [
+      "undead",
+      "frost"
+    ],
+    "weaknesses": [
+      "fire",
+      "holy"
+    ],
+    "resistances": [
+      "ice"
+    ],
+    "traitHints": [
+      "冰封死灵靠再生不断回血续航，需要爆发集火或叠加流血压制其回复。"
+    ],
+    "name_en": "Frost Revenant",
+    "description_en": "An ancient warrior sealed in permafrost, wielding a frosted broken blade.",
+    "traitHints_en": [
+      "Weak to fire and holy."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "frost_guardian",
+    "name": "冰霜守卫",
+    "tier": "elite",
+    "hp": 144,
+    "energy": 6,
+    "description": "冰封神殿的守护者，由万年寒冰锻造而成。",
+    "deck": [
+      {
+        "id": "fg_strike",
+        "name": "极寒突刺",
+        "name_en": "Frost Lunge",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 16,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成16点伤害，施加2层虚弱。",
+        "description_en": "Deal 16 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fg_wall",
+        "name": "寒冰壁垒",
+        "name_en": "Ice Bulwark",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 6
+        },
+        "description": "获得6点护甲。",
+        "description_en": "Gain 6 armor."
+      },
+      {
+        "id": "fg_smash",
+        "name": "冰封重击",
+        "name_en": "Frozen Smash",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 17,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成17点伤害，施加1层麻痹。",
+        "description_en": "Deal 17 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fg_wall2",
+        "name": "寒冰壁垒",
+        "name_en": "Ice Bulwark",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 6
+        },
+        "description": "获得6点护甲。",
+        "description_en": "Gain 6 armor."
+      },
+      {
+        "id": "fg_counter",
+        "name": "寒冰反击",
+        "name_en": "Ice Counter",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "armor": 3
+        },
+        "description": "造成10点伤害，获得3点护甲。",
+        "description_en": "Deal 10 damage, Gain 3 armor."
+      },
+      {
+        "id": "fg_counter2",
+        "name": "寒冰反击",
+        "name_en": "Ice Counter",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "armor": 3
+        },
+        "description": "造成10点伤害，获得3点护甲。",
+        "description_en": "Deal 10 damage, Gain 3 armor."
+      },
+      {
+        "id": "fg_lock",
+        "name": "冰锁",
+        "name_en": "Ice Lock",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成6点伤害，施加1层麻痹。",
+        "description_en": "Deal 6 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fg_aegis_base",
+        "name": "冰盾架势",
+        "name_en": "Ice Aegis Stance",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 4
+        },
+        "description": "获得4点护甲。",
+        "description_en": "Gain 4 armor."
+      },
+      {
+        "id": "fg_frenzy",
+        "name": "霜怒连击",
+        "name_en": "Frost Frenzy",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 14
+        },
+        "description": "造成14点伤害。",
+        "description_en": "Deal 14 damage."
+      },
+      {
+        "id": "fg_pierce",
+        "name": "冰锥突刺",
+        "name_en": "Ice Pierce",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 11,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成11点伤害，施加1层麻痹。",
+        "description_en": "Deal 11 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fg_aegis",
+        "name": "极寒壁垒",
+        "name_en": "Frozen Aegis",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 13
+        },
+        "description": "获得13点护甲。",
+        "description_en": "Gain 13 armor."
+      },
+      {
+        "id": "fg_retal",
+        "name": "霜盾反击",
+        "name_en": "Frostshield Riposte",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "armor": 7
+        },
+        "description": "造成8点伤害，获得7点护甲。",
+        "description_en": "Deal 8 damage, Gain 7 armor."
+      },
+      {
+        "id": "fg_hold",
+        "name": "冰牢固守",
+        "name_en": "Ice Prison Guard",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 12,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成0点伤害，获得12点护甲，施加1层麻痹。",
+        "description_en": "Deal 0 damage, gain 12 armor, apply 1 Paralyze."
+      },
+      {
+        "id": "fg_crackdown",
+        "name": "碎冰镇压",
+        "name_en": "Crackdown",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成12点伤害，施加1层麻痹。",
+        "description_en": "Deal 12 damage, apply 1 Paralyze."
+      }
+    ],
+    "rewards": {
+      "exp": 30,
+      "gold": 16,
+      "cardRarity": "blue"
+    },
+    "area": "frost",
+    "traits": [
+      "construct",
+      "frost"
+    ],
+    "weaknesses": [
+      "fire",
+      "armor_break"
+    ],
+    "resistances": [
+      "ice",
+      "bleed"
+    ],
+    "traitHints": [
+      "冰霜守卫护甲极高且抗冰，破甲与火焰是关键。"
+    ],
+    "name_en": "Frost Guardian",
+    "description_en": "Guardian of the Frost Temple, forged from ten-thousand-year ice.",
+    "traitHints_en": [
+      "High armor, weak to fire and armor-break."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "chaos_spawn",
+    "name": "混沌幼体",
+    "tier": "normal",
+    "hp": 87,
+    "energy": 4,
+    "description": "从虚空裂隙中渗出的混沌造物，形态不断扭曲。",
+    "deck": [
+      {
+        "id": "cs_claw",
+        "name": "混沌撕咬",
+        "name_en": "Chaos Bite",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加2层脆弱。",
+        "description_en": "Deal 12 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "cs_claw2",
+        "name": "混沌撕咬",
+        "name_en": "Chaos Bite",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加2层脆弱。",
+        "description_en": "Deal 12 damage, Apply 2 Fragile."
+      },
+      {
+        "id": "cs_spit",
+        "name": "腐蚀喷吐",
+        "name_en": "Corrosive Spit",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成10点伤害，施加2层中毒。",
+        "description_en": "Deal 10 damage, Apply 2 Poison."
+      },
+      {
+        "id": "cs_spit2",
+        "name": "腐蚀喷吐",
+        "name_en": "Corrosive Spit",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 10,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成10点伤害，施加2层中毒。",
+        "description_en": "Deal 10 damage, Apply 2 Poison."
+      },
+      {
+        "id": "cs_sting",
+        "name": "毒刺",
+        "name_en": "Venom Sting",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "poison",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加1层中毒。",
+        "description_en": "Deal 5 damage, Apply 1 Poison."
+      },
+      {
+        "id": "cs_crack",
+        "name": "扭曲裂隙",
+        "name_en": "Warp Crack",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "fragile",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "施加1层脆弱。",
+        "description_en": "Apply 1 Fragile."
+      },
+      {
+        "id": "cs_empower",
+        "name": "混沌增殖",
+        "name_en": "Chaos Proliferation",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 1,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加1层强化。",
+        "description_en": "Apply 1 Empower to self."
+      },
+      {
+        "id": "cs_hide",
+        "name": "畸形硬壳",
+        "name_en": "Warped Hide",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 16,
+      "gold": 20,
+      "cardRarity": "white"
+    },
+    "area": "chaos",
+    "traits": [
+      "chaos"
+    ],
+    "weaknesses": [
+      "holy"
+    ],
+    "resistances": [
+      "shadow",
+      "poison"
+    ],
+    "traitHints": [
+      "混沌幼体会增殖强化，圣光能克制其混沌本质。"
+    ],
+    "name_en": "Chaos Spawn",
+    "description_en": "A chaos creature seeping from void rifts, its form constantly twisting.",
+    "traitHints_en": [
+      "Weak to holy."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "chaos_phantom",
+    "name": "混沌魔影",
+    "tier": "elite",
+    "hp": 165,
+    "energy": 6,
+    "description": "由破碎法则凝成的暗影实体，吞噬一切秩序。",
+    "deck": [
+      {
+        "id": "cp_rip",
+        "name": "虚空撕裂",
+        "name_en": "Void Rend",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 18,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成18点伤害，施加2层虚弱。",
+        "description_en": "Deal 18 damage, Apply 2 Weak."
+      },
+      {
+        "id": "cp_curse",
+        "name": "脆弱诅咒",
+        "name_en": "Frailty Curse",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加3层脆弱。",
+        "description_en": "Deal 5 damage, Apply 3 Fragile."
+      },
+      {
+        "id": "cp_venom",
+        "name": "混沌剧毒",
+        "name_en": "Chaos Venom",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 20,
+          "applyStatus": {
+            "type": "poison",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成20点伤害，施加3层中毒。",
+        "description_en": "Deal 20 damage, Apply 3 Poison."
+      },
+      {
+        "id": "cp_jam",
+        "name": "秩序卡壳",
+        "name_en": "Order Jam",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "注入1张卡壳。",
+        "description_en": "Inject 1 Jam."
+      },
+      {
+        "id": "cp_jam2",
+        "name": "混沌乱斩",
+        "name_en": "Chaos Onslaught",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "damageMultiplier": 3
+        },
+        "description": "造成6点伤害3次。",
+        "description_en": "Deal 6 damage 3 times."
+      },
+      {
+        "id": "cp_jam3",
+        "name": "虚空噪声",
+        "name_en": "Void Static",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "damage": 3,
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "造成3点伤害，注入1张卡壳。",
+        "description_en": "Deal 3 damage, Inject 1 Jam."
+      },
+      {
+        "id": "cp_toxin",
+        "name": "暗影毒雾",
+        "name_en": "Shadow Toxin",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加2层中毒。",
+        "description_en": "Deal 8 damage, Apply 2 Poison."
+      },
+      {
+        "id": "cp_phase",
+        "name": "魔影闪避",
+        "name_en": "Phantom Shift",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "cp_burst",
+        "name": "虚空爆发",
+        "name_en": "Void Burst",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 14
+        },
+        "description": "造成14点伤害。",
+        "description_en": "Deal 14 damage."
+      },
+      {
+        "id": "cp_plague",
+        "name": "瘟疫之触",
+        "name_en": "Plague Touch",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "poison",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加3层中毒。",
+        "description_en": "Deal 12 damage, Apply 3 Poison."
+      },
+      {
+        "id": "cp_hex",
+        "name": "衰败咒印",
+        "name_en": "Decay Hex",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成4点伤害，施加3层脆弱。",
+        "description_en": "Deal 4 damage, Apply 3 Fragile."
+      },
+      {
+        "id": "cp_staticstorm",
+        "name": "卡壳风暴",
+        "name_en": "Jam Storm",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "injectCard": {
+            "card": "jam",
+            "count": 2
+          }
+        },
+        "description": "注入2张卡壳。",
+        "description_en": "Inject 2 Jam."
+      },
+      {
+        "id": "cp_noisesting",
+        "name": "噪声毒刺",
+        "name_en": "Static Sting",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 2
+          },
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "造成6点伤害，注入1张卡壳，施加2层中毒。",
+        "description_en": "Deal 6 damage, Inject 1 Jam, Apply 2 Poison."
+      },
+      {
+        "id": "cp_voidveil",
+        "name": "虚空幕布",
+        "name_en": "Void Veil",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 7
+        },
+        "description": "获得7点护甲。",
+        "description_en": "Gain 7 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 34,
+      "gold": 20,
+      "cardRarity": "blue"
+    },
+    "area": "chaos",
+    "traits": [
+      "chaos",
+      "shadow"
+    ],
+    "weaknesses": [
+      "holy"
+    ],
+    "resistances": [
+      "shadow",
+      "poison"
+    ],
+    "traitHints": [
+      "混沌魔影会施加易碎与中毒，圣光技能最为克制。"
+    ],
+    "name_en": "Chaos Phantom",
+    "description_en": "A shadow entity formed from shattered laws, devouring all order.",
+    "traitHints_en": [
+      "Weak to holy."
+    ],
+    "handSize": 4,
+    "currentHp": 165
+  },
+  {
+    "id": "chaos_aberration",
+    "name": "混沌畸变体",
+    "tier": "elite",
+    "hp": 170,
+    "energy": 6,
+    "description": "被混沌彻底重塑的巨型怪物，每一次攻击都违背常理。",
+    "deck": [
+      {
+        "id": "ca_burn",
+        "name": "无序狂潮",
+        "name_en": "Disorder Surge",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 20,
+          "manaBurn": 1
+        },
+        "description": "造成20点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 20 damage, Burn 1 mana."
+      },
+      {
+        "id": "ca_shell",
+        "name": "混沌护壳",
+        "name_en": "Chaos Carapace",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 7
+        },
+        "description": "获得7点护甲。",
+        "description_en": "Gain 7 armor."
+      },
+      {
+        "id": "ca_shell2",
+        "name": "混沌护壳",
+        "name_en": "Chaos Carapace",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 7
+        },
+        "description": "获得7点护甲。",
+        "description_en": "Gain 7 armor."
+      },
+      {
+        "id": "ca_crush",
+        "name": "无序碾压",
+        "name_en": "Disorder Crush",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 21,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成21点伤害，施加1层麻痹。",
+        "description_en": "Deal 21 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "ca_manaburn",
+        "name": "法力啃噬",
+        "name_en": "Mana Gnaw",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "damage": 7,
+          "manaBurn": 1
+        },
+        "description": "造成7点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 7 damage, Burn 1 mana."
+      },
+      {
+        "id": "ca_manaburn2",
+        "name": "法力啃噬",
+        "name_en": "Mana Gnaw",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "damage": 7,
+          "manaBurn": 1
+        },
+        "description": "造成7点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 7 damage, Burn 1 mana."
+      },
+      {
+        "id": "ca_ward",
+        "name": "畸变甲壳",
+        "name_en": "Aberrant Ward",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 4
+        },
+        "description": "获得4点护甲。",
+        "description_en": "Gain 4 armor."
+      },
+      {
+        "id": "ca_flux",
+        "name": "混乱脉冲",
+        "name_en": "Chaos Pulse",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "damage": 8,
+          "manaBurn": 2
+        },
+        "description": "造成8点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 8 damage, Burn 2 mana."
+      },
+      {
+        "id": "ca_rampage",
+        "name": "混沌肆虐",
+        "name_en": "Chaos Rampage",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 16
+        },
+        "description": "造成16点伤害。",
+        "description_en": "Deal 16 damage."
+      },
+      {
+        "id": "ca_pyre",
+        "name": "业火焚烧",
+        "name_en": "Cursed Pyre",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 13,
+          "manaBurn": 1
+        },
+        "description": "造成13点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 13 damage, Burn 1 mana."
+      },
+      {
+        "id": "ca_seize",
+        "name": "虚空禁锢",
+        "name_en": "Void Seize",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 11,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成11点伤害，施加1层麻痹。",
+        "description_en": "Deal 11 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "ca_nullfield",
+        "name": "空蓝领域",
+        "name_en": "Null Field",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "manaBurn": 2
+        },
+        "description": "灼烧2点蓝量。",
+        "description_en": "Burn 2 mana."
+      },
+      {
+        "id": "ca_hardshell",
+        "name": "厚重畸壳",
+        "name_en": "Thick Aberrant Shell",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 15
+        },
+        "description": "获得15点护甲。",
+        "description_en": "Gain 15 armor."
+      },
+      {
+        "id": "ca_manafang",
+        "name": "噬蓝利齿",
+        "name_en": "Mana Fang",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "manaBurn": 1
+        },
+        "description": "造成7点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 7 damage, Burn 1 mana."
+      }
+    ],
+    "rewards": {
+      "exp": 36,
+      "gold": 22,
+      "cardRarity": "blue"
+    },
+    "area": "chaos",
+    "traits": [
+      "chaos",
+      "beast"
+    ],
+    "weaknesses": [
+      "holy",
+      "ice"
+    ],
+    "resistances": [
+      "shadow",
+      "fire"
+    ],
+    "traitHints": [
+      "混沌畸变体护甲高且抗火，圣光与冰霜能有效压制。"
+    ],
+    "name_en": "Chaos Aberration",
+    "description_en": "A massive monster utterly reshaped by chaos, every attack defies reason.",
+    "traitHints_en": [
+      "Weak to holy and ice."
+    ],
+    "handSize": 4,
+    "currentHp": 170
+  },
+  {
+    "id": "boss_chaos_lord",
+    "name": "混沌之主",
+    "tier": "boss",
+    "hp": 280,
+    "energy": 9,
+    "description": "混沌深渊的终极主宰，法则的扭曲者。",
+    "deck": [
+      {
+        "id": "cl_strike",
+        "name": "混沌打击",
+        "name_en": "Chaos Strike",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 20,
+          "applyStatus": {
+            "type": "poison",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成20点伤害，施加4层中毒。",
+        "description_en": "Deal 20 damage, Apply 4 Poison."
+      },
+      {
+        "id": "cl_empower",
+        "name": "虚空之力",
+        "name_en": "Void Power",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 1,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "cl_smash",
+        "name": "法则崩坏",
+        "name_en": "Law Collapse",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 20,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成20点伤害，施加4层脆弱。",
+        "description_en": "Deal 20 damage, Apply 4 Fragile."
+      },
+      {
+        "id": "cl_curse",
+        "name": "混沌诅咒",
+        "name_en": "Chaos Curse",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "weak",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加4层虚弱。",
+        "description_en": "Deal 8 damage, Apply 4 Weak."
+      },
+      {
+        "id": "cl_venomveil",
+        "name": "毒雾法则",
+        "name_en": "Venom Law",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加3层中毒。",
+        "description_en": "Deal 12 damage, Apply 3 Poison."
+      },
+      {
+        "id": "cl_voidmend",
+        "name": "虚空愈合",
+        "name_en": "Void Mend",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 6
+        },
+        "description": "恢复6点生命。",
+        "description_en": "Heal 6 HP."
+      },
+      {
+        "id": "cl_manaleak",
+        "name": "法力泄露",
+        "name_en": "Mana Leak",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "damage": 7,
+          "manaBurn": 1
+        },
+        "description": "造成7点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 7 damage, Burn 1 mana."
+      },
+      {
+        "id": "cl_jamseed",
+        "name": "混沌卡壳",
+        "name_en": "Chaos Jam",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "注入1张卡壳。",
+        "description_en": "Inject 1 Jam."
+      },
+      {
+        "id": "cl_barrier",
+        "name": "深渊屏障",
+        "name_en": "Abyss Barrier",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "cl_siphon",
+        "name": "混沌虹吸",
+        "name_en": "Chaos Siphon",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 1
+        },
+        "description": "获得1点蓝量。",
+        "description_en": "Gain 1 mana."
+      },
+      {
+        "id": "cl_obliterate",
+        "name": "湮灭打击",
+        "name_en": "Obliteration",
+        "cost": 4,
+        "type": "attack",
+        "effect": {
+          "damage": 18
+        },
+        "description": "造成18点伤害，施加4层灼烧。",
+        "description_en": "Deal 18 damage, Apply 4 Burn."
+      },
+      {
+        "id": "cl_apocalypse",
+        "name": "终焉法则",
+        "name_en": "Apocalypse",
+        "cost": 5,
+        "type": "attack",
+        "effect": {
+          "damage": 20,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成20点伤害，施加5层脆弱。",
+        "description_en": "Deal 20 damage, Apply 5 Fragile."
+      },
+      {
+        "id": "cl_mend",
+        "name": "虚空回涌",
+        "name_en": "Void Surge",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 9,
+          "applyStatus": {
+            "type": "regen",
+            "value": 3,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复9点生命，为自身施加3层再生。",
+        "description_en": "Heal 9 HP, Apply 3 Regen to self."
+      },
+      {
+        "id": "cl_summon",
+        "name": "召唤虚空",
+        "name_en": "Summon Void",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加3层虚弱。",
+        "description_en": "Deal 9 damage, Apply 3 Weak."
+      },
+      {
+        "id": "cl_corruption",
+        "name": "万象腐化",
+        "name_en": "All Corruption",
+        "cost": 3,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "poison",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加4层中毒。",
+        "description_en": "Deal 12 damage, Apply 4 Poison."
+      },
+      {
+        "id": "cl_nulljam",
+        "name": "破法噪声",
+        "name_en": "Null Static",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "manaBurn": 1,
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "灼烧1点蓝量，注入1张卡壳。",
+        "description_en": "Burn 1 mana, Inject 1 Jam."
+      },
+      {
+        "id": "cl_voidarmor",
+        "name": "虚空护甲",
+        "name_en": "Void Armor",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 12
+        },
+        "description": "获得12点护甲。",
+        "description_en": "Gain 12 armor."
+      },
+      {
+        "id": "cl_finalhex",
+        "name": "终局诅咒",
+        "name_en": "Final Hex",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加3层虚弱。",
+        "description_en": "Deal 6 damage, Apply 3 Weak."
+      }
+    ],
+    "rewards": {
+      "exp": 100,
+      "gold": 60,
+      "cardRarity": "red"
+    },
+    "area": "chaos",
+    "traits": [
+      "chaos",
+      "boss"
+    ],
+    "weaknesses": [
+      "holy"
+    ],
+    "resistances": [
+      "shadow",
+      "poison"
+    ],
+    "traitHints": [
+      "混沌之主状态复杂，圣光技能能稳定压制。"
+    ],
+    "name_en": "Chaos Lord",
+    "description_en": "Ultimate ruler of the Chaos Abyss, a twister of the very laws of reality.",
+    "traitHints_en": [
+      "The Chaos Lord stacks many statuses. Holy skills can suppress it reliably."
+    ],
+    "handSize": 5
+  },
+  {
+    "id": "ruins_sentry",
+    "name": "符文浮球",
+    "tier": "normal",
+    "hp": 35,
+    "energy": 4,
+    "description": "古城遗迹中悬浮的符文构造体，单只符文眼会吸食入侵者的法力。",
+    "deck": [
+      {
+        "id": "rs_zap",
+        "name": "符文电击",
+        "name_en": "Rune Zap",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4
+        },
+        "description": "造成4点伤害。",
+        "description_en": "Deal 4 damage."
+      },
+      {
+        "id": "rs_drainbolt",
+        "name": "吸能弹",
+        "name_en": "Drain Bolt",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "manaBurn": 2
+        },
+        "description": "造成4点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 4 damage, Burn 2 mana."
+      },
+      {
+        "id": "rs_drainbolt2",
+        "name": "吸能弹",
+        "name_en": "Drain Bolt",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 4,
+          "manaBurn": 2
+        },
+        "description": "造成4点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 4 damage, Burn 2 mana."
+      },
+      {
+        "id": "rs_siphon",
+        "name": "法力虹吸",
+        "name_en": "Mana Siphon",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "manaBurn": 3
+        },
+        "description": "灼烧3点蓝量。",
+        "description_en": "Burn 3 mana."
+      },
+      {
+        "id": "rs_ward",
+        "name": "符文护壁",
+        "name_en": "Rune Ward",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "rs_ward2",
+        "name": "符文护壁",
+        "name_en": "Rune Ward",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "rs_overload",
+        "name": "回路过载",
+        "name_en": "Circuit Overload",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "manaBurn": 1
+        },
+        "description": "造成8点伤害，灼烧1点蓝量。",
+        "description_en": "Deal 8 damage, Burn 1 mana."
+      },
+      {
+        "id": "rs_recharge",
+        "name": "符文充能",
+        "name_en": "Rune Recharge",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 2
+        },
+        "description": "获得2点蓝量。",
+        "description_en": "Gain 2 mana."
+      }
+    ],
+    "rewards": {
+      "exp": 11,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "ruins",
+    "traits": [
+      "construct",
+      "ruins"
+    ],
+    "weaknesses": [
+      "armor_break",
+      "lightning"
+    ],
+    "resistances": [
+      "poison",
+      "bleed"
+    ],
+    "traitHints": [
+      "符文浮球专烧你的蓝量，留意能量管理；高费爆发牌要趁早打出。"
+    ],
+    "name_en": "Rune Orb",
+    "description_en": "A floating rune construct of the ancient ruins; its single rune eye drains intruders' mana.",
+    "traitHints_en": [
+      "Burns your mana — play high-cost cards early."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "flame_wisp",
+    "name": "灰烬游魂",
+    "tier": "normal",
+    "hp": 42,
+    "energy": 4,
+    "description": "由余烬聚成的躁动幽魂，燃烧得越凶，熄灭得越快。",
+    "deck": [
+      {
+        "id": "fwsp_ember",
+        "name": "余烬抓击",
+        "name_en": "Ember Claw",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加2层灼烧。",
+        "description_en": "Deal 5 damage, Apply 2 Burn."
+      },
+      {
+        "id": "fwsp_ember2",
+        "name": "余烬抓击",
+        "name_en": "Ember Claw",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加2层灼烧。",
+        "description_en": "Deal 5 damage, Apply 2 Burn."
+      },
+      {
+        "id": "fwsp_flare",
+        "name": "爆燃",
+        "name_en": "Flare Burst",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "burn",
+            "value": 4,
+            "duration": 3
+          }
+        },
+        "description": "施加4层灼烧。",
+        "description_en": "Apply 4 Burn."
+      },
+      {
+        "id": "fwsp_flare2",
+        "name": "爆燃",
+        "name_en": "Flare Burst",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "burn",
+            "value": 4,
+            "duration": 3
+          }
+        },
+        "description": "施加4层灼烧。",
+        "description_en": "Apply 4 Burn."
+      },
+      {
+        "id": "fwsp_kindle",
+        "name": "燃魂",
+        "name_en": "Soul Kindle",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "fwsp_immolate",
+        "name": "自燃突袭",
+        "name_en": "Immolating Rush",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      },
+      {
+        "id": "fwsp_immolate2",
+        "name": "自燃突袭",
+        "name_en": "Immolating Rush",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      },
+      {
+        "id": "fwsp_flicker",
+        "name": "残焰摇曳",
+        "name_en": "Flicker",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 1
+        },
+        "description": "获得1点护甲。",
+        "description_en": "Gain 1 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 13,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "flame",
+    "traits": [
+      "elemental",
+      "flame"
+    ],
+    "weaknesses": [
+      "ice",
+      "water"
+    ],
+    "resistances": [
+      "fire"
+    ],
+    "traitHints": [
+      "灰烬游魂血薄但灼烧爆发极高，护甲低；速杀或先叠护甲扛过灼烧。"
+    ],
+    "name_en": "Ash Wisp",
+    "description_en": "A restless spirit of embers — the fiercer it burns, the faster it fades.",
+    "traitHints_en": [
+      "Glass cannon: high Burn, low armor. Kill fast or stack armor."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "chaos_crawler",
+    "name": "虚空爬虫",
+    "tier": "normal",
+    "hp": 85,
+    "energy": 4,
+    "description": "在裂隙边缘孳生的污秽爬虫，会把腐坏之物塞进你的牌库。",
+    "deck": [
+      {
+        "id": "ccr_bite",
+        "name": "腐蚀啃咬",
+        "name_en": "Corroding Bite",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 3
+          }
+        },
+        "description": "造成7点伤害，施加2层中毒。",
+        "description_en": "Deal 7 damage, Apply 2 Poison."
+      },
+      {
+        "id": "ccr_bite2",
+        "name": "腐蚀啃咬",
+        "name_en": "Corroding Bite",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "poison",
+            "value": 2,
+            "duration": 3
+          }
+        },
+        "description": "造成7点伤害，施加2层中毒。",
+        "description_en": "Deal 7 damage, Apply 2 Poison."
+      },
+      {
+        "id": "ccr_spew",
+        "name": "污秽喷吐",
+        "name_en": "Filth Spew",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "poison",
+            "value": 4,
+            "duration": 3
+          }
+        },
+        "description": "施加4层中毒。",
+        "description_en": "Apply 4 Poison."
+      },
+      {
+        "id": "ccr_infest",
+        "name": "蛀蚀牌库",
+        "name_en": "Infest",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "注入1张卡壳。",
+        "description_en": "Inject 1 Jam."
+      },
+      {
+        "id": "ccr_infest2",
+        "name": "蛀蚀牌库",
+        "name_en": "Infest",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "injectCard": {
+            "card": "jam",
+            "count": 1
+          }
+        },
+        "description": "注入1张卡壳。",
+        "description_en": "Inject 1 Jam."
+      },
+      {
+        "id": "ccr_lash",
+        "name": "触须鞭挞",
+        "name_en": "Tendril Lash",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12
+        },
+        "description": "造成12点伤害。",
+        "description_en": "Deal 12 damage."
+      },
+      {
+        "id": "ccr_carapace",
+        "name": "畸壳",
+        "name_en": "Warped Carapace",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "ccr_molt",
+        "name": "蜕壳再生",
+        "name_en": "Molt",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "regen",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层再生。",
+        "description_en": "Apply 2 Regen to self."
+      }
+    ],
+    "rewards": {
+      "exp": 18,
+      "gold": 7,
+      "cardRarity": "green"
+    },
+    "area": "chaos",
+    "traits": [
+      "aberration",
+      "chaos"
+    ],
+    "weaknesses": [
+      "holy",
+      "fire"
+    ],
+    "resistances": [
+      "poison"
+    ],
+    "traitHints": [
+      "虚空爬虫会往牌库塞卡壳并叠毒；尽快击杀以减少污染，或备好清牌手段。"
+    ],
+    "name_en": "Void Crawler",
+    "description_en": "A vile crawler spawned at the rift's edge; it stuffs your deck with rot.",
+    "traitHints_en": [
+      "Injects Jam and stacks Poison — kill quickly to limit deck pollution."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "frost_gnawer",
+    "name": "霜噬者",
+    "tier": "normal",
+    "hp": 65,
+    "energy": 4,
+    "description": "藏身雪原的饿兽，啃咬留下永不愈合的霜冻伤口。",
+    "deck": [
+      {
+        "id": "fgn_rend",
+        "name": "霜牙撕裂",
+        "name_en": "Frost Rend",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层流血。",
+        "description_en": "Deal 6 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "fgn_rend2",
+        "name": "霜牙撕裂",
+        "name_en": "Frost Rend",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层流血。",
+        "description_en": "Deal 6 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "fgn_maul",
+        "name": "寒口猛咬",
+        "name_en": "Cold Maul",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加2层虚弱。",
+        "description_en": "Deal 9 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fgn_frostbite",
+        "name": "深骨霜咬",
+        "name_en": "Deep Frostbite",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "bleed",
+            "value": 4,
+            "duration": 3
+          }
+        },
+        "description": "施加4层流血。",
+        "description_en": "Apply 4 Bleed."
+      },
+      {
+        "id": "fgn_pounce",
+        "name": "雪地扑袭",
+        "name_en": "Snow Pounce",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12
+        },
+        "description": "造成12点伤害。",
+        "description_en": "Deal 12 damage."
+      },
+      {
+        "id": "fgn_hide",
+        "name": "厚毛御寒",
+        "name_en": "Thick Pelt",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fgn_hide2",
+        "name": "厚毛御寒",
+        "name_en": "Thick Pelt",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fgn_howl",
+        "name": "饥饿咆哮",
+        "name_en": "Hungry Howl",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      }
+    ],
+    "rewards": {
+      "exp": 14,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "frost",
+    "traits": [
+      "beast",
+      "frost"
+    ],
+    "weaknesses": [
+      "fire",
+      "holy"
+    ],
+    "resistances": [
+      "ice"
+    ],
+    "traitHints": [
+      "霜噬者靠流血放血，攻势凶猛但无回复；叠护甲扛住爆发再反打。"
+    ],
+    "name_en": "Frost Gnawer",
+    "description_en": "A starving beast of the snowfields; its bite leaves wounds that never close.",
+    "traitHints_en": [
+      "Aggressive Bleed dealer with no healing — armor up and trade back."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "forest_boar",
+    "name": "尖牙野猪",
+    "tier": "normal",
+    "hp": 27,
+    "energy": 3,
+    "description": "迷雾森林里横冲直撞的猛兽，被激怒后愈发凶狂。",
+    "deck": [
+      {
+        "id": "boar_gore",
+        "name": "獠牙冲撞",
+        "name_en": "Tusk Gore",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6
+        },
+        "description": "造成6点伤害。",
+        "description_en": "Deal 6 damage."
+      },
+      {
+        "id": "boar_gore2",
+        "name": "獠牙冲撞",
+        "name_en": "Tusk Gore",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6
+        },
+        "description": "造成6点伤害。",
+        "description_en": "Deal 6 damage."
+      },
+      {
+        "id": "boar_charge",
+        "name": "狂野冲锋",
+        "name_en": "Wild Charge",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9
+        },
+        "description": "造成9点伤害。",
+        "description_en": "Deal 9 damage."
+      },
+      {
+        "id": "boar_rage",
+        "name": "暴怒",
+        "name_en": "Enrage",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "boar_rage2",
+        "name": "暴怒",
+        "name_en": "Enrage",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "boar_trample",
+        "name": "践踏",
+        "name_en": "Trample",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 4
+        },
+        "description": "造成4点伤害。",
+        "description_en": "Deal 4 damage."
+      },
+      {
+        "id": "boar_hide",
+        "name": "硬皮",
+        "name_en": "Tough Hide",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 1
+        },
+        "description": "获得1点护甲。",
+        "description_en": "Gain 1 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 11,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "forest",
+    "traits": [
+      "beast",
+      "forest"
+    ],
+    "weaknesses": [
+      "ice",
+      "fire"
+    ],
+    "resistances": [
+      "bleed"
+    ],
+    "traitHints": [
+      "野猪靠强化越打越痛，速战速决别让它叠满强化。"
+    ],
+    "name_en": "Tusked Boar",
+    "description_en": "A reckless beast of the misty forest that grows fiercer when enraged.",
+    "traitHints_en": [
+      "Stacks Empower to hit harder over time — end the fight fast."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "ruins_husk",
+    "name": "残骸魔偶",
+    "tier": "normal",
+    "hp": 35,
+    "energy": 4,
+    "description": "遗迹中歪斜残破的魔偶，断臂处漏出的灰雾会侵蚀入侵者的力量。",
+    "deck": [
+      {
+        "id": "husk_swipe",
+        "name": "锈拳",
+        "name_en": "Rusted Fist",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加1层虚弱。",
+        "description_en": "Deal 6 damage, Apply 1 Weak."
+      },
+      {
+        "id": "husk_swipe2",
+        "name": "锈拳",
+        "name_en": "Rusted Fist",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加1层虚弱。",
+        "description_en": "Deal 6 damage, Apply 1 Weak."
+      },
+      {
+        "id": "husk_dust",
+        "name": "灰雾喷吐",
+        "name_en": "Ash Cloud",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成7点伤害，施加1层虚弱。",
+        "description_en": "Deal 7 damage, Apply 1 Weak."
+      },
+      {
+        "id": "husk_grind",
+        "name": "碾压",
+        "name_en": "Grind",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8
+        },
+        "description": "造成8点伤害。",
+        "description_en": "Deal 8 damage."
+      },
+      {
+        "id": "husk_plate",
+        "name": "残甲加固",
+        "name_en": "Broken Plating",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "husk_plate2",
+        "name": "残甲加固",
+        "name_en": "Broken Plating",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "husk_curse",
+        "name": "衰朽诅咒",
+        "name_en": "Decay Curse",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "施加1层虚弱。",
+        "description_en": "Apply 1 Weak."
+      }
+    ],
+    "rewards": {
+      "exp": 11,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "ruins",
+    "traits": [
+      "construct",
+      "ruins"
+    ],
+    "weaknesses": [
+      "armor_break",
+      "lightning"
+    ],
+    "resistances": [
+      "poison",
+      "bleed"
+    ],
+    "traitHints": [
+      "残骸魔偶专叠虚弱削你输出，带净化或先靠护甲拖过虚弱期。"
+    ],
+    "name_en": "Ruined Husk",
+    "description_en": "A broken automaton whose leaking ash saps the strength of intruders.",
+    "traitHints_en": [
+      "Stacks Weak to cut your damage — cleanse or armor through it."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "flame_beetle",
+    "name": "炽炎甲虫",
+    "tier": "normal",
+    "hp": 52,
+    "energy": 4,
+    "description": "甲壳被熔火淬炼的巨虫，外壳坚硬，受击时迸发火星。",
+    "deck": [
+      {
+        "id": "fbt_shell",
+        "name": "熔壳",
+        "name_en": "Molten Shell",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fbt_shell2",
+        "name": "熔壳",
+        "name_en": "Molten Shell",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "fbt_bite",
+        "name": "灼颚",
+        "name_en": "Searing Jaws",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层灼烧。",
+        "description_en": "Deal 6 damage, Apply 2 Burn."
+      },
+      {
+        "id": "fbt_bite2",
+        "name": "灼颚",
+        "name_en": "Searing Jaws",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "burn",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层灼烧。",
+        "description_en": "Deal 6 damage, Apply 2 Burn."
+      },
+      {
+        "id": "fbt_emberguard",
+        "name": "余烬迸射",
+        "name_en": "Ember Burst",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加1层灼烧。",
+        "description_en": "Deal 8 damage, Apply 1 Burn."
+      },
+      {
+        "id": "fbt_ram",
+        "name": "灼热冲撞",
+        "name_en": "Burning Ram",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 10
+        },
+        "description": "造成10点伤害。",
+        "description_en": "Deal 10 damage."
+      },
+      {
+        "id": "fbt_flare",
+        "name": "甲壳爆燃",
+        "name_en": "Shell Flare",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 3
+          }
+        },
+        "description": "施加3层灼烧。",
+        "description_en": "Apply 3 Burn."
+      }
+    ],
+    "rewards": {
+      "exp": 13,
+      "gold": 6,
+      "cardRarity": "white"
+    },
+    "area": "flame",
+    "traits": [
+      "beast",
+      "flame"
+    ],
+    "weaknesses": [
+      "ice",
+      "armor_break"
+    ],
+    "resistances": [
+      "fire"
+    ],
+    "traitHints": [
+      "炽炎甲虫靠厚甲与灼烧打消耗，破甲技能能拆掉它的硬壳。"
+    ],
+    "name_en": "Cinder Beetle",
+    "description_en": "A giant insect with a lava-forged carapace that sparks when struck.",
+    "traitHints_en": [
+      "An armored burn-attrition tank — armor-break cracks its shell."
+    ],
+    "handSize": 3
+  },
+  {
+    "id": "chaos_laweater",
+    "name": "噬法体",
+    "tier": "normal",
+    "hp": 85,
+    "energy": 4,
+    "description": "以秩序为食的混沌肉块，吞食法力并让现实变得脆弱。",
+    "deck": [
+      {
+        "id": "cle_gnaw",
+        "name": "啃噬法力",
+        "name_en": "Mana Gnaw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "manaBurn": 2
+        },
+        "description": "造成7点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 7 damage, Burn 2 mana."
+      },
+      {
+        "id": "cle_gnaw2",
+        "name": "啃噬法力",
+        "name_en": "Mana Gnaw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 7,
+          "manaBurn": 2
+        },
+        "description": "造成7点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 7 damage, Burn 2 mana."
+      },
+      {
+        "id": "cle_devour",
+        "name": "吞食秩序",
+        "name_en": "Devour Order",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "manaBurn": 3
+        },
+        "description": "灼烧3点蓝量。",
+        "description_en": "Burn 3 mana."
+      },
+      {
+        "id": "cle_warp",
+        "name": "现实扭曲",
+        "name_en": "Reality Warp",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "fragile",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "施加3层脆弱。",
+        "description_en": "Apply 3 Fragile."
+      },
+      {
+        "id": "cle_lash",
+        "name": "混沌鞭笞",
+        "name_en": "Chaos Lash",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "fragile",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加1层脆弱。",
+        "description_en": "Deal 12 damage, Apply 1 Fragile."
+      },
+      {
+        "id": "cle_ward",
+        "name": "畸形护壁",
+        "name_en": "Aberrant Ward",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 2
+        },
+        "description": "获得2点护甲。",
+        "description_en": "Gain 2 armor."
+      },
+      {
+        "id": "cle_feed",
+        "name": "饱食回涌",
+        "name_en": "Glut",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 2
+        },
+        "description": "获得2点蓝量。",
+        "description_en": "Gain 2 mana."
+      }
+    ],
+    "rewards": {
+      "exp": 18,
+      "gold": 7,
+      "cardRarity": "green"
+    },
+    "area": "chaos",
+    "traits": [
+      "aberration",
+      "chaos"
+    ],
+    "weaknesses": [
+      "holy"
+    ],
+    "resistances": [
+      "shadow",
+      "poison"
+    ],
+    "traitHints": [
+      "噬法体烧蓝又叠脆弱，管理好能量并尽快击杀以免被滚雪球。"
+    ],
+    "name_en": "Law Eater",
+    "description_en": "A chaos-flesh that feeds on order, devouring mana and warping reality thin.",
+    "traitHints_en": [
+      "Burns mana and stacks Fragile — manage energy and kill it quickly."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "forest_stag",
+    "name": "鹿角妖",
+    "tier": "elite",
+    "hp": 44,
+    "energy": 5,
+    "description": "森林深处的古老精怪，鹿角缠绕荆棘，伤口越多它愈合得越快。",
+    "deck": [
+      {
+        "id": "stag_goring",
+        "name": "鹿角穿刺",
+        "name_en": "Antler Gore",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成6点伤害，施加2层流血。",
+        "description_en": "Deal 6 damage, Apply 2 Bleed."
+      },
+      {
+        "id": "stag_goring2",
+        "name": "鹿角连刺",
+        "name_en": "Antler Barrage",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 3,
+          "damageMultiplier": 3,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成3点伤害3次，施加1层流血。",
+        "description_en": "Deal 3 damage 3 times, Apply 1 Bleed."
+      },
+      {
+        "id": "stag_thornlash",
+        "name": "荆棘鞭击",
+        "name_en": "Thorn Lash",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 5,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成5点伤害，施加3层流血。",
+        "description_en": "Deal 5 damage, Apply 3 Bleed."
+      },
+      {
+        "id": "stag_renew",
+        "name": "森林愈合",
+        "name_en": "Forest Mending",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "heal": 4,
+          "applyStatus": {
+            "type": "regen",
+            "value": 3,
+            "duration": 3,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复4点生命，为自身施加3层再生。",
+        "description_en": "Heal 4 HP, Apply 3 Regen to self."
+      },
+      {
+        "id": "stag_bark",
+        "name": "树皮护甲",
+        "name_en": "Bark Guard",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "stag_bark2",
+        "name": "树皮护甲",
+        "name_en": "Bark Guard",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "stag_charge",
+        "name": "野性冲撞",
+        "name_en": "Feral Ram",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9
+        },
+        "description": "造成9点伤害。",
+        "description_en": "Deal 9 damage."
+      },
+      {
+        "id": "stag_call",
+        "name": "森林低语",
+        "name_en": "Forest Whisper",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "stag_frenzy",
+        "name": "狂暴鹿角",
+        "name_en": "Frenzied Antlers",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加3层流血。",
+        "description_en": "Deal 8 damage, Apply 3 Bleed."
+      },
+      {
+        "id": "stag_frenzy2",
+        "name": "狂暴鹿角",
+        "name_en": "Frenzied Antlers",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "bleed",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加3层流血。",
+        "description_en": "Deal 8 damage, Apply 3 Bleed."
+      },
+      {
+        "id": "stag_overgrow",
+        "name": "暴长再生",
+        "name_en": "Overgrowth",
+        "cost": 2,
+        "type": "buff",
+        "effect": {
+          "heal": 6,
+          "applyStatus": {
+            "type": "regen",
+            "value": 4,
+            "duration": 3,
+            "target": "enemy"
+          }
+        },
+        "description": "恢复6点生命，为自身施加4层再生。",
+        "description_en": "Heal 6 HP, Apply 4 Regen to self."
+      },
+      {
+        "id": "stag_rampage",
+        "name": "荒野践踏",
+        "name_en": "Wild Rampage",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      },
+      {
+        "id": "stag_bark3",
+        "name": "硬化树皮",
+        "name_en": "Hardened Bark",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 7
+        },
+        "description": "获得7点护甲。",
+        "description_en": "Gain 7 armor."
+      },
+      {
+        "id": "stag_roar",
+        "name": "嗜血咆哮",
+        "name_en": "Bloodthirsty Roar",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 3,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加3层强化。",
+        "description_en": "Apply 3 Empower to self."
+      }
+    ],
+    "rewards": {
+      "exp": 24,
+      "gold": 14,
+      "cardRarity": "green"
+    },
+    "area": "forest",
+    "traits": [
+      "beast",
+      "forest"
+    ],
+    "weaknesses": [
+      "fire",
+      "armor_break"
+    ],
+    "resistances": [
+      "bleed"
+    ],
+    "traitHints": [
+      "鹿角妖靠再生续航又放流血，需爆发集火压过它的回复，火焰尤其有效。"
+    ],
+    "name_en": "Antlered Fae",
+    "description_en": "An ancient forest spirit whose thorny antlers knit its wounds shut ever faster.",
+    "traitHints_en": [
+      "A bleed-and-regen bruiser — burst it down; fire works best."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "ruins_colossus",
+    "name": "遗迹巨像",
+    "tier": "elite",
+    "hp": 70,
+    "energy": 6,
+    "description": "镇守遗迹核心的巨型石像构装体，古老符文在石缝中隐隐发光。",
+    "deck": [
+      {
+        "id": "rcl_slam",
+        "name": "符文重砸",
+        "name_en": "Rune Slam",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8
+        },
+        "description": "造成8点伤害。",
+        "description_en": "Deal 8 damage."
+      },
+      {
+        "id": "rcl_slam2",
+        "name": "符文重砸",
+        "name_en": "Rune Slam",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8
+        },
+        "description": "造成8点伤害。",
+        "description_en": "Deal 8 damage."
+      },
+      {
+        "id": "rcl_drain",
+        "name": "法力抽取",
+        "name_en": "Mana Drain",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "manaBurn": 2
+        },
+        "description": "造成6点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 6 damage, Burn 2 mana."
+      },
+      {
+        "id": "rcl_drain2",
+        "name": "法力抽取",
+        "name_en": "Mana Drain",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 6,
+          "manaBurn": 2
+        },
+        "description": "造成6点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 6 damage, Burn 2 mana."
+      },
+      {
+        "id": "rcl_plating",
+        "name": "符文装甲",
+        "name_en": "Rune Plating",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "rcl_plating2",
+        "name": "符文装甲",
+        "name_en": "Rune Plating",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "rcl_siphon",
+        "name": "回路虹吸",
+        "name_en": "Circuit Siphon",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "manaBurn": 3
+        },
+        "description": "灼烧3点蓝量。",
+        "description_en": "Burn 3 mana."
+      },
+      {
+        "id": "rcl_charge",
+        "name": "核心充能",
+        "name_en": "Core Charge",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 3
+        },
+        "description": "获得3点蓝量。",
+        "description_en": "Gain 3 mana."
+      },
+      {
+        "id": "rcl_overload",
+        "name": "符文过载",
+        "name_en": "Rune Overload",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "manaBurn": 2
+        },
+        "description": "造成9点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 9 damage, Burn 2 mana."
+      },
+      {
+        "id": "rcl_overload2",
+        "name": "符文过载",
+        "name_en": "Rune Overload",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "manaBurn": 2
+        },
+        "description": "造成9点伤害，灼烧2点蓝量。",
+        "description_en": "Deal 9 damage, Burn 2 mana."
+      },
+      {
+        "id": "rcl_purge",
+        "name": "法力清除",
+        "name_en": "Mana Purge",
+        "cost": 2,
+        "type": "special",
+        "effect": {
+          "manaBurn": 4
+        },
+        "description": "灼烧4点蓝量。",
+        "description_en": "Burn 4 mana."
+      },
+      {
+        "id": "rcl_aegis",
+        "name": "符文壁垒",
+        "name_en": "Rune Aegis",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 12
+        },
+        "description": "获得12点护甲。",
+        "description_en": "Gain 12 armor."
+      },
+      {
+        "id": "rcl_smash",
+        "name": "崩坏重拳",
+        "name_en": "Collapsing Fist",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12
+        },
+        "description": "造成12点伤害。",
+        "description_en": "Deal 12 damage."
+      },
+      {
+        "id": "rcl_recharge",
+        "name": "核心重启",
+        "name_en": "Core Reboot",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 4
+        },
+        "description": "获得4点蓝量。",
+        "description_en": "Gain 4 mana."
+      }
+    ],
+    "rewards": {
+      "exp": 26,
+      "gold": 15,
+      "cardRarity": "green"
+    },
+    "area": "ruins",
+    "traits": [
+      "construct",
+      "ruins"
+    ],
+    "weaknesses": [
+      "armor_break",
+      "lightning"
+    ],
+    "resistances": [
+      "poison",
+      "bleed"
+    ],
+    "traitHints": [
+      "遗迹巨像甲厚又疯狂烧蓝，破甲与低费爆发是突破口，别囤高费牌。"
+    ],
+    "name_en": "Ruins Colossus",
+    "description_en": "A giant stone construct guarding the ruins' core; ancient runes glow within its stone cracks.",
+    "traitHints_en": [
+      "High armor plus heavy mana burn — armor-break and cheap bursts win."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "flame_brimstone",
+    "name": "硫火魔",
+    "tier": "elite",
+    "hp": 110,
+    "energy": 6,
+    "description": "从硫磺裂隙爬出的烈焰恶魔，越燃越旺，把战场化作火海。",
+    "deck": [
+      {
+        "id": "brm_claw",
+        "name": "硫焰爪",
+        "name_en": "Brimstone Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加3层灼烧。",
+        "description_en": "Deal 8 damage, Apply 3 Burn."
+      },
+      {
+        "id": "brm_claw2",
+        "name": "硫焰爪",
+        "name_en": "Brimstone Claw",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 3,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加3层灼烧。",
+        "description_en": "Deal 8 damage, Apply 3 Burn."
+      },
+      {
+        "id": "brm_pyre",
+        "name": "硫磺火堆",
+        "name_en": "Sulfur Pyre",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "burn",
+            "value": 5,
+            "duration": 3
+          }
+        },
+        "description": "施加5层灼烧。",
+        "description_en": "Apply 5 Burn."
+      },
+      {
+        "id": "brm_kindle",
+        "name": "烈焰滋长",
+        "name_en": "Stoke Flames",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 2,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加2层强化。",
+        "description_en": "Apply 2 Empower to self."
+      },
+      {
+        "id": "brm_smash",
+        "name": "炽炎重击",
+        "name_en": "Searing Smash",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 11
+        },
+        "description": "造成11点伤害。",
+        "description_en": "Deal 11 damage."
+      },
+      {
+        "id": "brm_guard",
+        "name": "炎鳞",
+        "name_en": "Flame Scales",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 3
+        },
+        "description": "获得3点护甲。",
+        "description_en": "Gain 3 armor."
+      },
+      {
+        "id": "brm_surge",
+        "name": "火脉",
+        "name_en": "Fire Vein",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "manaGain": 2
+        },
+        "description": "获得2点蓝量。",
+        "description_en": "Gain 2 mana."
+      },
+      {
+        "id": "brm_inferno",
+        "name": "炼狱风暴",
+        "name_en": "Inferno Storm",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 4,
+            "duration": 3
+          }
+        },
+        "description": "造成8点伤害，施加4层灼烧。",
+        "description_en": "Deal 8 damage, Apply 4 Burn."
+      },
+      {
+        "id": "brm_inferno2",
+        "name": "炼狱风暴",
+        "name_en": "Inferno Storm",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "burn",
+            "value": 4,
+            "duration": 3
+          }
+        },
+        "description": "造成8点伤害，施加4层灼烧。",
+        "description_en": "Deal 8 damage, Apply 4 Burn."
+      },
+      {
+        "id": "brm_conflagration",
+        "name": "燎原",
+        "name_en": "Conflagration",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "burn",
+            "value": 7,
+            "duration": 3
+          }
+        },
+        "description": "施加7层灼烧。",
+        "description_en": "Apply 7 Burn."
+      },
+      {
+        "id": "brm_blaze",
+        "name": "狂焰",
+        "name_en": "Raging Blaze",
+        "cost": 1,
+        "type": "buff",
+        "effect": {
+          "applyStatus": {
+            "type": "empower",
+            "value": 3,
+            "duration": 2,
+            "target": "enemy"
+          }
+        },
+        "description": "为自身施加3层强化。",
+        "description_en": "Apply 3 Empower to self."
+      },
+      {
+        "id": "brm_meteor",
+        "name": "陨火",
+        "name_en": "Meteor",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 13
+        },
+        "description": "造成13点伤害。",
+        "description_en": "Deal 13 damage."
+      },
+      {
+        "id": "brm_scales2",
+        "name": "熔岩鳞甲",
+        "name_en": "Molten Scales",
+        "cost": 1,
+        "type": "defense",
+        "effect": {
+          "armor": 7
+        },
+        "description": "获得7点护甲。",
+        "description_en": "Gain 7 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 30,
+      "gold": 16,
+      "cardRarity": "green"
+    },
+    "area": "flame",
+    "traits": [
+      "demon",
+      "flame"
+    ],
+    "weaknesses": [
+      "ice",
+      "water"
+    ],
+    "resistances": [
+      "fire"
+    ],
+    "traitHints": [
+      "硫火魔灼烧叠层极猛又自我强化，备好减灼烧或护甲速杀。"
+    ],
+    "name_en": "Brimstone Fiend",
+    "description_en": "A flame demon from a sulfur rift that burns ever hotter, drowning the field in fire.",
+    "traitHints_en": [
+      "Massive Burn stacking with self-empower — cleanse or armor and rush."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "frost_witch",
+    "name": "寒冰女巫",
+    "tier": "elite",
+    "hp": 137,
+    "energy": 6,
+    "description": "盘踞冰封神殿的霜法女巫，以寒霜锁住敌人，再从容收割。",
+    "deck": [
+      {
+        "id": "fwi_shard",
+        "name": "冰晶飞射",
+        "name_en": "Ice Shard",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加1层虚弱。",
+        "description_en": "Deal 9 damage, Apply 1 Weak."
+      },
+      {
+        "id": "fwi_shard2",
+        "name": "冰晶飞射",
+        "name_en": "Ice Shard",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 9,
+          "applyStatus": {
+            "type": "weak",
+            "value": 1,
+            "duration": 2
+          }
+        },
+        "description": "造成9点伤害，施加1层虚弱。",
+        "description_en": "Deal 9 damage, Apply 1 Weak."
+      },
+      {
+        "id": "fwi_freeze",
+        "name": "冰封禁锢",
+        "name_en": "Glacial Bind",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成4点伤害，施加1层麻痹。",
+        "description_en": "Deal 4 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fwi_freeze2",
+        "name": "冰封禁锢",
+        "name_en": "Glacial Bind",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 1,
+            "duration": 1
+          }
+        },
+        "description": "造成4点伤害，施加1层麻痹。",
+        "description_en": "Deal 4 damage, apply 1 Paralyze."
+      },
+      {
+        "id": "fwi_ward",
+        "name": "霜盾",
+        "name_en": "Frost Ward",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 5
+        },
+        "description": "获得5点护甲。",
+        "description_en": "Gain 5 armor."
+      },
+      {
+        "id": "fwi_mend",
+        "name": "寒霜愈合",
+        "name_en": "Frost Mending",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 8
+        },
+        "description": "恢复8点生命。",
+        "description_en": "Heal 8 HP."
+      },
+      {
+        "id": "fwi_hex",
+        "name": "凛冬诅咒",
+        "name_en": "Winter Hex",
+        "cost": 1,
+        "type": "debuff",
+        "effect": {
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "施加2层虚弱。",
+        "description_en": "Apply 2 Weak."
+      },
+      {
+        "id": "fwi_lance",
+        "name": "寒锋",
+        "name_en": "Frost Lance",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 13
+        },
+        "description": "造成13点伤害。",
+        "description_en": "Deal 13 damage."
+      },
+      {
+        "id": "fwi_blizzard",
+        "name": "暴风雪",
+        "name_en": "Blizzard",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 8,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成8点伤害，施加2层虚弱。",
+        "description_en": "Deal 8 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fwi_deepfreeze",
+        "name": "深度冰封",
+        "name_en": "Deep Freeze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 2,
+            "duration": 1
+          }
+        },
+        "description": "造成4点伤害，施加2层麻痹。",
+        "description_en": "Deal 4 damage, apply 2 Paralyze."
+      },
+      {
+        "id": "fwi_deepfreeze2",
+        "name": "深度冰封",
+        "name_en": "Deep Freeze",
+        "cost": 2,
+        "type": "debuff",
+        "effect": {
+          "damage": 4,
+          "applyStatus": {
+            "type": "paralyze",
+            "value": 2,
+            "duration": 1
+          }
+        },
+        "description": "造成4点伤害，施加2层麻痹。",
+        "description_en": "Deal 4 damage, apply 2 Paralyze."
+      },
+      {
+        "id": "fwi_glacialheal",
+        "name": "冰川回春",
+        "name_en": "Glacial Renewal",
+        "cost": 2,
+        "type": "heal",
+        "effect": {
+          "heal": 12
+        },
+        "description": "恢复12点生命。",
+        "description_en": "Heal 12 HP."
+      },
+      {
+        "id": "fwi_absolutezero",
+        "name": "绝对零度",
+        "name_en": "Absolute Zero",
+        "cost": 2,
+        "type": "attack",
+        "effect": {
+          "damage": 12,
+          "applyStatus": {
+            "type": "weak",
+            "value": 2,
+            "duration": 2
+          }
+        },
+        "description": "造成12点伤害，施加2层虚弱。",
+        "description_en": "Deal 12 damage, Apply 2 Weak."
+      },
+      {
+        "id": "fwi_aegis2",
+        "name": "永冻壁垒",
+        "name_en": "Permafrost Aegis",
+        "cost": 2,
+        "type": "defense",
+        "effect": {
+          "armor": 11
+        },
+        "description": "获得11点护甲。",
+        "description_en": "Gain 11 armor."
+      }
+    ],
+    "rewards": {
+      "exp": 30,
+      "gold": 16,
+      "cardRarity": "green"
+    },
+    "area": "frost",
+    "traits": [
+      "humanoid",
+      "frost"
+    ],
+    "weaknesses": [
+      "fire",
+      "holy"
+    ],
+    "resistances": [
+      "ice"
+    ],
+    "traitHints": [
+      "寒冰女巫靠麻痹锁手又自我治疗，集火打断节奏，火焰能压制其回复。"
+    ],
+    "name_en": "Frost Witch",
+    "description_en": "A frost sorceress of the frozen temple who locks foes in ice, then harvests at leisure.",
+    "traitHints_en": [
+      "Paralyzes and self-heals — focus her down; fire counters her recovery."
+    ],
+    "handSize": 4
+  },
+  {
+    "id": "training_dummy",
+    "name": "训练木人桩",
+    "name_en": "Training Dummy",
+    "tier": "normal",
+    "area": "training",
+    "hp": 999,
+    "damage": 1,
+    "energy": 3,
+    "armor": 0,
+    "deck": [
+      {
+        "id": "dummy_punch",
+        "name": "木桩一击",
+        "name_en": "Dummy Punch",
+        "cost": 1,
+        "type": "attack",
+        "effect": {
+          "damage": 1
+        },
+        "description": "造成1点伤害。",
+        "description_en": "Deal 1 damage."
+      }
+    ],
+    "handSize": 1,
+    "rewards": {
+      "exp": 0,
+      "gold": 0,
+      "cardRarity": "white"
+    },
+    "traits": [
+      "construct"
+    ],
+    "weaknesses": [],
+    "resistances": [],
+    "description": "训练用木人桩，血量极高但攻击力微弱。",
+    "description_en": "A training dummy with massive HP but weak attacks."
+  }
+]

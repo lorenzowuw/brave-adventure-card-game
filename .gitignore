@@ -1,0 +1,42 @@
+# 视频文件（太大，不跟踪）
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.log
+*.tmp
+temp/
+tmp/
+
+# 编辑器
+.vscode/settings.json
+.agents/
+.playwright-mcp/
+.claude/
+
+# 压缩包
+*.zip
+*.vsix
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# 图片（如非资产可以取消注释）
+# *.png
+# *.jpg
+*.bak
+
+# Local generation and analysis output
+.tmp_monster/
+report.html
+report.md
+report-speech.md
+benchmark_results.json

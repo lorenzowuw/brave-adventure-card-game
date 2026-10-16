@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="冥想·精进">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="96" r="62" fill="none" stroke="#899aac" stroke-width="3" stroke-dasharray="5 7" opacity="0.5"/>
+    <circle cx="128" cy="66" r="16" fill="#3e454d" stroke="#899aac" stroke-width="4"/>
+    <path d="M88 138 C88 110 108 96 128 96 C148 96 168 110 168 138 Z" fill="#3e454d" stroke="#899aac" stroke-width="5"/>
+    <path d="M88 138 C100 130 156 130 168 138" stroke="#abbccf" stroke-width="4" fill="none"/>
+    <path d="M128 30 V44 M86 96 L76 88 M170 96 L180 88" stroke="#abbccf" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">冥想·精进</text>
+</svg>

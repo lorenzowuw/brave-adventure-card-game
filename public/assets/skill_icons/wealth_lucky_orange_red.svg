@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="幸运硬币·神话">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="96" r="72" fill="#e3b80e" opacity="0.12"/>
+    <circle cx="128" cy="96" r="44" fill="#665306" stroke="#e3b80e" stroke-width="5"/>
+    <g fill="#f5d552">
+      <path d="M128 96 C128 76 110 70 110 86 C100 80 96 98 116 100 Z"/>
+      <path d="M128 96 C148 96 154 78 138 78 C144 68 126 64 124 84 Z"/>
+      <path d="M128 96 C128 116 146 122 146 106 C156 112 160 94 140 92 Z"/>
+      <path d="M128 96 C108 96 102 114 118 114 C112 124 130 128 132 108 Z"/>
+    </g>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">幸运硬币·神话</text>
+</svg>

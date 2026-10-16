@@ -1,0 +1,8 @@
+# 敌人数值表 - 按难度分层（仅参考文档；实际 hp/energy 内联于 enemies.json，按区域梯度递增）
+# 区域推进顺序与 hp 梯度: forest(24-27/40/60) < ruins(30-34/48/110) < flame(34-40/72/135) < frost(42-47/80/155) < chaos(50-52/92-98/185)
+# 变量名:enemy_tier,base_hp,base_attack,base_energy,gold_mult,exp_base
+# 类型:string,float,float,float,float,float
+# normal:普通,elite:精英,boss:Boss
+normal,20.0,5.0,3.0,1.0,10.0
+elite,40.0,8.0,5.0,2.5,22.0
+boss,80.0,12.0,7.0,5.0,50.0

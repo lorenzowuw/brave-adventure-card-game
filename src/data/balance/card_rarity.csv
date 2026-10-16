@@ -1,0 +1,9 @@
+# 卡牌稀有度数值倍率
+# 变量名:rarity,multiplier,drop_weight,shop_price_mult
+# 类型:string,float,float,float
+white,1.0,50.0,1.0
+green,1.4,30.0,2.0
+blue,1.8,15.0,4.0
+purple,2.3,5.0,8.0
+orange,3.0,2.0,15.0
+red,4.0,0.5,30.0

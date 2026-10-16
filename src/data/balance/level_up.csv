@@ -1,0 +1,14 @@
+# 升级曲线表
+# 变量名:level,exp_required,hp_bonus_pct,energy_bonus_pct,unlock
+# 类型:int,int,int,int,string
+# 说明：hp_bonus_pct 和 energy_bonus_pct 是百分比加成
+1,0,0,0,skill_slot_1
+2,20,12,5,skill_slot_2
+3,45,25,10,upgrade_choice
+4,80,40,15,skill_slot_3
+5,130,55,20,upgrade_choice
+6,200,75,25,passive_slot_1
+7,290,95,30,upgrade_choice
+8,410,115,35,skill_slot_4
+9,560,140,40,upgrade_all
+10,750,170,50,passive_slot_2

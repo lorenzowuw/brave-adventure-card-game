@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="无声处决·史诗">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+
+    <circle cx="128" cy="96" r="72" fill="#8e44ad" opacity="0.12"/>
+    <path d="M150 30 L162 42 L108 150 L96 162 L88 154 L100 142 Z" fill="#401f4e" stroke="#8e44ad" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M150 30 L162 42 L156 48 L144 36 Z" fill="#bb8fce"/>
+    <path d="M118 120 L138 140 M108 130 L128 150" stroke="#8e44ad" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 60 C80 80 80 110 64 128" stroke="#8e44ad" stroke-width="5" fill="none" opacity="0.5" stroke-linecap="round"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="18" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">无声处决·史诗</text>
+</svg>

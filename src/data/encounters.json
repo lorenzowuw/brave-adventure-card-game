@@ -1,0 +1,122 @@
+[
+  {
+    "id": "wolf",
+    "name": "野狼",
+    "type": "combat",
+    "hp": 6,
+    "attack": 2,
+    "tags": ["野兽", "哺乳"],
+    "weaknessTags": ["近战", "远程", "陷阱", "野兽", "驱赶"],
+    "rewards": { "pelt": 1, "bone": 1 },
+    "description": "一头饥饿的灰狼在林间低吼。",
+    "icon": "🐺"
+  },
+  {
+    "id": "boar",
+    "name": "野猪",
+    "type": "combat",
+    "hp": 10,
+    "attack": 3,
+    "tags": ["野兽", "厚皮"],
+    "weaknessTags": ["远程", "陷阱", "野兽", "穿刺"],
+    "rewards": { "food": 2, "pelt": 1 },
+    "description": "厚皮野猪冲撞起来十分危险。",
+    "icon": "🐗"
+  },
+  {
+    "id": "snake",
+    "name": "毒蛇",
+    "type": "combat",
+    "hp": 4,
+    "attack": 1,
+    "tags": ["野兽", "小型", "毒性"],
+    "weaknessTags": ["远程", "近战", "锋利"],
+    "rewards": { "poison": 1, "pelt": 1 },
+    "description": "草丛中盘踞的毒蛇，攻击虽轻但会令人紧张。",
+    "icon": "🐍"
+  },
+  {
+    "id": "bear",
+    "name": "巨熊",
+    "type": "combat",
+    "hp": 15,
+    "attack": 4,
+    "tags": ["野兽", "大型"],
+    "weaknessTags": ["陷阱", "远程", "野兽", "驱赶"],
+    "rewards": { "food": 3, "pelt": 2, "bone": 1 },
+    "description": "巨熊挡住去路，正面硬拼代价很高。",
+    "icon": "🐻"
+  },
+  {
+    "id": "goblin",
+    "name": "哥布林",
+    "type": "combat",
+    "hp": 5,
+    "attack": 2,
+    "tags": ["人型", "小型"],
+    "weaknessTags": ["近战", "远程", "锋利"],
+    "rewards": { "parts": 1, "food": 1 },
+    "description": "瘦小的人型怪物，腰间挂着偷来的零件。",
+    "icon": "👺"
+  },
+  {
+    "id": "spider",
+    "name": "巨型蜘蛛",
+    "type": "combat",
+    "hp": 7,
+    "attack": 2,
+    "tags": ["虫类"],
+    "weaknessTags": ["火", "照明", "远程", "近战"],
+    "rewards": { "silk": 1, "poison": 1 },
+    "description": "蛛网覆盖了树梢，阴影中有八条腿在移动。",
+    "icon": "🕷"
+  },
+  {
+    "id": "tree",
+    "name": "树木",
+    "type": "gather",
+    "hp": 3,
+    "attack": 0,
+    "tags": ["资源", "木材"],
+    "weaknessTags": ["斧头", "砍伐", "工具"],
+    "rewards": { "wood": 3 },
+    "description": "适合砍伐的粗壮树木。",
+    "icon": "🌲"
+  },
+  {
+    "id": "ore_vein",
+    "name": "矿脉",
+    "type": "gather",
+    "hp": 2,
+    "attack": 0,
+    "tags": ["资源", "金属"],
+    "weaknessTags": ["镐头", "挖掘"],
+    "rewards": { "metal": 2 },
+    "description": "岩壁中露出的金属矿脉。",
+    "icon": "🪨"
+  },
+  {
+    "id": "herbs",
+    "name": "药草丛",
+    "type": "gather",
+    "hp": 1,
+    "attack": 0,
+    "tags": ["资源", "草药"],
+    "weaknessTags": ["医疗", "工具", "消耗"],
+    "rewards": { "herb": 2 },
+    "description": "带有清香的野生草药。徒手也能采集。",
+    "icon": "🍃"
+  },
+  {
+    "id": "carcass",
+    "name": "猎物尸体",
+    "type": "gather",
+    "hp": 2,
+    "attack": 0,
+    "tags": ["资源", "猎物"],
+    "weaknessTags": ["刀", "锋利", "近战"],
+    "rewards": { "food": 2, "pelt": 1 },
+    "description": "新鲜猎物尸体，刀具能完整剥取材料。",
+    "icon": "🦌"
+  }
+]

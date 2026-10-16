@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="192" viewBox="0 0 256 192" role="img" aria-label="裂甲火线·史诗">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#2a241d"/>
+      <stop offset="62%" stop-color="#15151d"/>
+      <stop offset="100%" stop-color="#08080c"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="192" rx="24" fill="url(#bg)"/>
+  <path d="M18 153 C73 129 171 130 238 154" stroke="#000" stroke-width="18" opacity="0.42" fill="none"/>
+  <g filter="url(#glow)">
+    <circle cx="128" cy="96" r="74" fill="#ff7a2f" opacity="0.13"/>
+    <path d="M70 134 C98 102 116 78 146 42" stroke="#ff7a2f" stroke-width="12" stroke-linecap="round"/>
+    <path d="M92 146 C123 115 149 88 188 54" stroke="#ffd166" stroke-width="7" stroke-linecap="round"/>
+    <path d="M82 66 L112 86 M132 54 L142 88 M156 110 L194 126" stroke="#c84220" stroke-width="5" stroke-linecap="round"/>
+    <path d="M58 122 L88 114 L74 150 Z" fill="#5b1e14" stroke="#ff7a2f" stroke-width="4"/>
+  </g>
+  <text x="128" y="181" fill="#fff4cc" font-family="Microsoft YaHei, Noto Sans SC, sans-serif" font-size="16" font-weight="700" text-anchor="middle" paint-order="stroke" stroke="#000" stroke-width="4">裂甲火线·史诗</text>
+</svg>
